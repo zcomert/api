@@ -31,7 +31,7 @@ public class HomeController : ControllerBase
     [HttpGet("students/{id}")] // api/home/students/{id}
     public String GetOneStudent(int id)
     {
-        if (id < 0 || id >= _students.Count)
+        if (id <= 0 || id >= _students.Count)
         {
             return "Student not found.";
         }

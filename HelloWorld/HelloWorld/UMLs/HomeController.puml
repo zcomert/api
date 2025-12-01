@@ -1,0 +1,17 @@
+@startuml
+title HomeController
+package HelloWorld.Controllers {
+
+class HomeController {
+    - _students : List<String>
+    + HomeController()
+    + Greetings() : String
+    + GetStudents() : List<String>
+    + GetOneStudent(id : int) : String
+}
+}
+
+HomeController -up-|> ControllerBase : "<<extends>>"
+
+hide empty members
+@enduml
