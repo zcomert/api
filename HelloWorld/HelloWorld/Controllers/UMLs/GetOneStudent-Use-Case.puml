@@ -1,0 +1,14 @@
+@startuml
+left to right direction
+actor User as user
+
+rectangle "Student Management" {
+    usecase "Request Student by ID" as UC1
+    usecase "Display Student Information" as UC2
+    usecase "Display Student Not Found Message" as UC3
+}
+
+user --> UC1
+UC1 --> UC2 : include if student found
+UC1 --> UC3 : include if student not found
+@enduml

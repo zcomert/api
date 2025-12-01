@@ -19,9 +19,9 @@ public class HomeController : ControllerBase
         };
     }
     [HttpGet]
-    public String Greetings()
+    public IActionResult Greetings()
     {
-        return "Hello, World from HomeController.";
+        return Ok("Hello, World from HomeController."); // 200
     }
 
     [HttpGet("students")] // api/home/students
@@ -29,12 +29,12 @@ public class HomeController : ControllerBase
     
 
     [HttpGet("students/{id}")] // api/home/students/{id}
-    public String GetOneStudent(int id)
+    public IActionResult GetOneStudent(int id)
     {
         if (id <= 0 || id >= _students.Count)
         {
-            return "Student not found.";
+            return NotFound("Student not found"); // 404
         }
-        return _students[id-1];
+        return Ok(_students[id-1]);
     }
 }

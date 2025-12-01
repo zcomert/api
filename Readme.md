@@ -9,7 +9,7 @@
 - `Visual Studio` ile Proje Oluşturma
 - ASP.NET Core Empty Proje Şablonu
 - ASP.NET Web Api Proje Şablonu
-- Swager
+- Swagger
 
 # MVC Proje Deseni
 

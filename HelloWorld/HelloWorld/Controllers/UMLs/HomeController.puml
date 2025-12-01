@@ -5,7 +5,7 @@ package HelloWorld.Controllers {
 class HomeController {
     - _students : List<String>
     + HomeController()
-    + Greetings() : String
+    + Greetings() : IActionResult
     + GetStudents() : List<String>
     + GetOneStudent(id : int) : String
 }
