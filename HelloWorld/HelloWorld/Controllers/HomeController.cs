@@ -6,6 +6,18 @@ namespace HelloWorld.Controllers;
 [Route("api/[controller]")]
 public class HomeController : ControllerBase
 {
+    private List<String> _students;
+    public HomeController()
+    {
+        _students = new List<String>()
+        {
+            "Mehmet",
+            "Hakan",
+            "Murat",
+            "Selahattin",
+            "Murat"
+        };
+    }
     [HttpGet]
     public String Greetings()
     {
@@ -13,30 +25,16 @@ public class HomeController : ControllerBase
     }
 
     [HttpGet("students")] // api/home/students
-    public List<String> GetStudents()
-    {
-        var students =  new List<String>()
-        {
-            "Mehmet",
-            "Hakan",
-            "Murat",
-            "Selahattin",
-            "Murat"
-        };
-        return students;
-    }
+    public List<String> GetStudents() => _students;
+    
 
     [HttpGet("students/{id}")] // api/home/students/{id}
     public String GetOneStudent(int id)
     {
-        var students = new List<String>()
+        if (id < 0 || id >= _students.Count)
         {
-            "Mehmet",
-            "Hakan",
-            "Murat",
-            "Selahattin",
-            "Murat"
-        };
-        return students[id];
+            return "Student not found.";
+        }
+        return _students[id-1];
     }
 }
