@@ -21,6 +21,11 @@ package "ModelApp.Data" {
     }
 }
 
+package "ModelApp.Controllers" {
+    class BooksController {
+    }
+}
+
 "ModelApp.Data.ApplicationContextInMemory" ..> "ModelApp.Models.Book"
 "ModelApp.Data.ApplicationContextInMemory" ..> "ModelApp.Models.Category"
 @enduml
