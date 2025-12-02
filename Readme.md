@@ -30,12 +30,27 @@
 - `Logging`
 - `launchSettings.json` Profil Yönetimi
 
-# Veri Odaklı Geliştirme
+# HTTP Verbs ile Çalışma
 
 - HTTP Verbs
 - `HttpGet` Attribute
 - `HttpPost` Attribute
 - `HttpPut` Attribute
 - `HttpDelete` Attribute
+
+# In Memory Context Tanımı ve Modellerle Çalışma
+
 - `InMemoryContext` Tanımı
 - Context ve Controller İlişkisi
+- Creat
+- Read / Retrieve
+- Update
+- Delete
+
+# API Test
+
+- HTTP Yöntemlerinin Test Edilmesi
+- Global değişkenler
+- Koleksiyon değişkenleri
+- API Test Scriptleri
+- Random Fonksiyonlar

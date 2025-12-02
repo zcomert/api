@@ -1,0 +1,26 @@
+@startuml
+title Class Diagram
+
+package "ModelApp.Models" {
+    class Book {
+        + Id: int
+        + Title: string
+        + Price: decimal
+    }
+
+    class Category {
+        + CategoryId: int
+        + CategoryName: string?
+    }
+}
+
+package "ModelApp.Data" {
+    class ApplicationContextInMemory {
+        + {static} Books: List<Book>
+        + {static} Categories: List<Category>
+    }
+}
+
+"ModelApp.Data.ApplicationContextInMemory" ..> "ModelApp.Models.Book"
+"ModelApp.Data.ApplicationContextInMemory" ..> "ModelApp.Models.Category"
+@enduml
