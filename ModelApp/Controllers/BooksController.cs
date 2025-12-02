@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using ModelApp.Data;
 using ModelApp.Models;
 
@@ -20,14 +20,6 @@ public class BooksController : ControllerBase
     [HttpGet("{id:int}")] // api/books/{id}
     public IActionResult GetOneBook([FromRoute(Name ="id")] int id)
     {
-        // Eski kod yapısı : Prosedürel / Yapılandırılmış programlama paradigması
-        //foreach (Book book in ApplicationContextInMemory.Books)
-        //{
-        //    if (book.Id == id)
-        //        return Ok(book); // 200
-        //}
-        //return NotFound(); // 404
-
         var book = ApplicationContextInMemory
             .Books
             .FirstOrDefault(b => b.Id == id);
@@ -48,10 +40,6 @@ public class BooksController : ControllerBase
                     max = b.Id;
             }
 
-            //var max = ApplicationContextInMemory
-            //    .Books
-            //    .Max(b => b.Id);
-
             book.Id = max + 1;
             ApplicationContextInMemory.Books.Add(book);
             return StatusCode(201, book); // 201
@@ -60,5 +48,29 @@ public class BooksController : ControllerBase
         {
             return BadRequest(ex.Message); // 400
         }
+    }
+
+    [HttpPut("{id:int}")] // api/books/{id}
+    public IActionResult UpdateOneBook([FromRoute(Name = "id")] int id,
+        [FromBody] Book book)
+    {
+        if (book is null)
+            return BadRequest(); // 400
+
+        var existing = ApplicationContextInMemory
+            .Books
+            .FirstOrDefault(b => b.Id == id);
+        if (existing is null)
+            return NotFound(); // 404
+
+        // If client supplied an Id in the body, ensure it matches the route id
+        if (book.Id != 0 && book.Id != id)
+            return BadRequest("Route id and body id must match."); // 400
+
+        // Update allowed properties
+        existing.Title = book.Title;
+        existing.Price = book.Price;
+
+        return Ok(existing); // 200
     }
 }
