@@ -1,5 +1,6 @@
 @startuml
 title Class Diagram
+hide empty members
 
 package "ModelApp.Models" {
     class Book {
@@ -23,9 +24,18 @@ package "ModelApp.Data" {
 
 package "ModelApp.Controllers" {
     class BooksController {
+        + GetAllBooks(): IActionResult
+        + GetOneBook(id: int): IActionResult
+    }
+
+    class CategoriesController {
+        + GetAllCategories(): IActionResult
     }
 }
 
 "ModelApp.Data.ApplicationContextInMemory" ..> "ModelApp.Models.Book"
 "ModelApp.Data.ApplicationContextInMemory" ..> "ModelApp.Models.Category"
+
+"ModelApp.Controllers.BooksController" ..> "ModelApp.Data.ApplicationContextInMemory"
+"ModelApp.Controllers.CategoriesController" ..> "ModelApp.Data.ApplicationContextInMemory"
 @enduml
