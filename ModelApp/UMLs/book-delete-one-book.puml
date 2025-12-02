@@ -1,0 +1,17 @@
+@startuml
+title DeleteOneBook Activity Diagram
+
+start
+:Receive book id;
+:Find book by id in ApplicationContextInMemory.Books;
+
+if (book is null?) then (yes)
+    :Return NotFound() (404);
+    stop
+else (no)
+    :Remove book from ApplicationContextInMemory.Books;
+    :Return NoContent() (204);
+    stop
+endif
+
+@enduml

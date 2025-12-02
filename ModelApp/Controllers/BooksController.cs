@@ -73,4 +73,16 @@ public class BooksController : ControllerBase
 
         return Ok(existing); // 200
     }
+
+    [HttpDelete("{id:int}")] // api/books/{id}
+    public IActionResult DeleteOneBook([FromRoute(Name = "id")] int id)
+    {
+        var book = ApplicationContextInMemory
+            .Books
+            .FirstOrDefault(b => b.Id == id);
+        if (book is null)
+            return NotFound(); // 404
+        ApplicationContextInMemory.Books.Remove(book);
+        return NoContent(); // 204
+    }
 }

@@ -65,5 +65,34 @@ namespace ModelApp.Controllers
             
 
         }
+
+        [HttpPut("{id:int}")]
+        public IActionResult UpdateOneCategory([FromRoute(Name = "id")] int id,
+            [FromBody] Category category)
+        {
+            var existingCategory = ApplicationContextInMemory
+                .Categories
+                .FirstOrDefault(c => c.CategoryId == id);
+            if (existingCategory is null)
+            {
+                return NotFound($"ID'si {id} olan kategori bulunamadı.");
+            }
+            existingCategory.CategoryName = category.CategoryName;
+            return NoContent(); // 204
+        }
+
+        [HttpDelete("{id:int}")] // api/categories/{id}
+        public IActionResult DeleteOneCategory([FromRoute(Name = "id")] int id)
+        {
+            var category = ApplicationContextInMemory
+                .Categories
+                .FirstOrDefault(c => c.CategoryId == id);
+            if (category is null)
+            {
+                return NotFound($"ID'si {id} olan kategori bulunamadı.");
+            }
+            ApplicationContextInMemory.Categories.Remove(category);
+            return NoContent(); // 204
+        }
     }
 }
