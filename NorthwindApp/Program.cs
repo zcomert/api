@@ -1,8 +1,9 @@
 using Microsoft.EntityFrameworkCore;
+using NorthwindApp.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddDbContext<RepositoryContext>(options =>
+builder.Services.AddDbContext<NorthwindDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
 );
 
@@ -10,16 +11,8 @@ var app = builder.Build();
 
 
 
-app.MapGet("/", () => "Hello World!");
+app.MapGet("/", (NorthwindDbContext context) => 
+    context.Products.ToList()
+);
 
 app.Run();
-
-public class RepositoryContext : DbContext
-{
-    public RepositoryContext(DbContextOptions<RepositoryContext> options)
-     : base(options)
-    {
-    }
-
-
-}
