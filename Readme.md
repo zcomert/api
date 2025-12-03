@@ -54,3 +54,13 @@
 - Koleksiyon değişkenleri
 - API Test Scriptleri
 - Random Fonksiyonlar
+
+# Object Relational Mapping (ORM)
+
+- dotnet tool
+- Entities / Models
+- Repository Context
+- Connection String
+- Migrations
+- Type Configuration
+- Inversion of Control
