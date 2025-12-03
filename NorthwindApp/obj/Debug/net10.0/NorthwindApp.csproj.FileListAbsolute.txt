@@ -209,3 +209,4 @@ D:\api\NorthwindApp\obj\Debug\net10.0\refint\NorthwindApp.dll
 D:\api\NorthwindApp\obj\Debug\net10.0\NorthwindApp.pdb
 D:\api\NorthwindApp\obj\Debug\net10.0\NorthwindApp.genruntimeconfig.cache
 D:\api\NorthwindApp\obj\Debug\net10.0\ref\NorthwindApp.dll
+D:\api\NorthwindApp\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt

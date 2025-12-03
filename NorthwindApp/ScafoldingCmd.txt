@@ -1,0 +1,1 @@
+Scaffold-DbContext -Connection "Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=NorthwindDb;Integrated Security=True;" -Provider Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models 
