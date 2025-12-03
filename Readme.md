@@ -63,4 +63,5 @@
 - Connection String
 - Migrations
 - Type Configuration
+- Fluent API
 - Inversion of Control
