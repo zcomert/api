@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Entities/Entities.csproj" />
+  <Project Path="Repositories/Repositories.csproj" />
+</Solution>

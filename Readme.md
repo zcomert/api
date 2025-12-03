@@ -65,3 +65,5 @@
 - Type Configuration
 - Fluent API
 - Inversion of Control
+- Code-First
+- Database-First
