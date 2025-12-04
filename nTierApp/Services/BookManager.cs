@@ -7,11 +7,10 @@ namespace Services;
 
 public class BookManager : IBookService
 {
-    private readonly IBookRepository _bookRepository;
-
-    public BookManager(IBookRepository bookRepository)
+    private readonly IRepositoryManager _manager;
+    public BookManager(IRepositoryManager manager)
     {
-        _bookRepository = bookRepository;
+        _manager = manager;
     }
 
     public Book CreateBook(Book book)
@@ -19,7 +18,7 @@ public class BookManager : IBookService
         if(book is null)
             throw new ArgumentNullException(nameof(book));
         
-        _bookRepository.Create(book);
+        _manager.BookRepository.Create(book);
         return book;
     }
 
@@ -30,22 +29,27 @@ public class BookManager : IBookService
         if(entity is null)
             throw new ArgumentNullException(nameof(entity));
         
-        _bookRepository.Delete(entity);
+        //_bookRepository.Delete(entity);
+        _manager.BookRepository.Delete(entity);
     }
 
     public IEnumerable<Book> GetAllBooks(Expression<Func<Book, bool>> expression = null, 
         bool trackChanges = false)
     {
-        return _bookRepository.GetAll(expression, trackChanges);
+        return _manager
+            .BookRepository
+            .GetAll(expression, trackChanges);
     }
 
     public Book? GetBookById(int bookId, bool trackChanges = false)
     {
-        var book = _bookRepository
+        var book = _manager
+            .BookRepository
             .GetOne(b => b.Id.Equals(bookId), trackChanges);
 
         if (book is null)
             throw new Exception($"Kitap {bookId} bulunamadı!");
+        
         return book;
     }
 
