@@ -17,13 +17,13 @@ public class RepositoryBase<T> : IRepostioryBase<T>
     public void Create(T entity)
     {
         _context.Set<T>().Add(entity);
-        _context.SaveChanges();
+        //_context.SaveChanges(); // Repository Manager kaydetme işlemini yapacak
     }
 
     public void Delete(T entity)
     {
         _context.Set<T>().Remove(entity);
-        _context.SaveChanges();
+        //_context.SaveChanges();
     }
 
     public IQueryable<T> GetAll(Expression<Func<T, bool>>? expression=null,
@@ -78,6 +78,6 @@ public class RepositoryBase<T> : IRepostioryBase<T>
     public void Update(T entity)
     {
         _context.Set<T>().Update(entity);
-        _context.SaveChanges();
+        //_context.SaveChanges();
     }
 }

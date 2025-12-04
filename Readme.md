@@ -67,3 +67,9 @@
 - Inversion of Control
 - Code-First
 - Database-First
+
+# Katmanlı Mimari
+
+- nTier/n-Layer Mimari
+- Generic Repository Design Pattern
+- Unit of Work
