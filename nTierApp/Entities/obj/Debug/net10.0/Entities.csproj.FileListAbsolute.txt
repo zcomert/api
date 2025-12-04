@@ -1,0 +1,12 @@
+D:\api\nTierApp\Entities\bin\Debug\net10.0\Entities.deps.json
+D:\api\nTierApp\Entities\bin\Debug\net10.0\Entities.dll
+D:\api\nTierApp\Entities\bin\Debug\net10.0\Entities.pdb
+D:\api\nTierApp\Entities\obj\Debug\net10.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+D:\api\nTierApp\Entities\obj\Debug\net10.0\Entities.AssemblyInfoInputs.cache
+D:\api\nTierApp\Entities\obj\Debug\net10.0\Entities.AssemblyInfo.cs
+D:\api\nTierApp\Entities\obj\Debug\net10.0\Entities.csproj.CoreCompileInputs.cache
+D:\api\nTierApp\Entities\obj\Debug\net10.0\Entities.sourcelink.json
+D:\api\nTierApp\Entities\obj\Debug\net10.0\Entities.dll
+D:\api\nTierApp\Entities\obj\Debug\net10.0\refint\Entities.dll
+D:\api\nTierApp\Entities\obj\Debug\net10.0\Entities.pdb
+D:\api\nTierApp\Entities\obj\Debug\net10.0\ref\Entities.dll
