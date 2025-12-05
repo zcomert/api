@@ -18,8 +18,11 @@ builder.Services.AddDbContext<RepositoryContext>(options =>
 });
 
 builder.Services.AddScoped<IBookService, BookManager>();
+builder.Services.AddScoped<ICategoryService, CategoryManager>();
+
 //builder.Services.AddScoped<IBookRepository, BookRepository>();
 //builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+
 builder.Services.AddScoped<IRepositoryManager, RepositoryManager>();
 
 

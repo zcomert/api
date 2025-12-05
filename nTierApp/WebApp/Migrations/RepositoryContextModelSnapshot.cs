@@ -70,7 +70,7 @@ namespace WebApp.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CategoryId"));
 
-                    b.Property<string>("CagetoryName")
+                    b.Property<string>("CategoryName")
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
@@ -83,27 +83,27 @@ namespace WebApp.Migrations
                         new
                         {
                             CategoryId = 1,
-                            CagetoryName = "Science Fiction"
+                            CategoryName = "Science Fiction"
                         },
                         new
                         {
                             CategoryId = 2,
-                            CagetoryName = "Fantasy"
+                            CategoryName = "Fantasy"
                         },
                         new
                         {
                             CategoryId = 3,
-                            CagetoryName = "Mystery"
+                            CategoryName = "Mystery"
                         },
                         new
                         {
                             CategoryId = 4,
-                            CagetoryName = "Romance"
+                            CategoryName = "Romance"
                         },
                         new
                         {
                             CategoryId = 5,
-                            CagetoryName = "Horror"
+                            CategoryName = "Horror"
                         });
                 });
 #pragma warning restore 612, 618

@@ -10,16 +10,16 @@ public class CategoryConfig : IEntityTypeConfiguration<Category>
     {
         builder.ToTable("Categories");
 
-        builder.Property(c => c.CagetoryName)
+        builder.Property(c => c.CategoryName)
             .IsRequired()
             .HasMaxLength(100);
 
         builder.HasData(
-            new Category { CategoryId = 1, CagetoryName = "Science Fiction" },
-            new Category { CategoryId = 2, CagetoryName = "Fantasy" },
-            new Category { CategoryId = 3, CagetoryName = "Mystery" },
-            new Category { CategoryId = 4, CagetoryName = "Romance" },
-            new Category { CategoryId = 5, CagetoryName = "Horror" }
+            new Category { CategoryId = 1, CategoryName = "Science Fiction" },
+            new Category { CategoryId = 2, CategoryName = "Fantasy" },
+            new Category { CategoryId = 3, CategoryName = "Mystery" },
+            new Category { CategoryId = 4, CategoryName = "Romance" },
+            new Category { CategoryId = 5, CategoryName = "Horror" }
         );
     }
 }

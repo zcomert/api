@@ -26,12 +26,9 @@ public class BookManager : IBookService
     public void DeleteBook(int id, bool trackChanges)
     {
         var entity = GetBookById(id, trackChanges);
-        
-        if(entity is null)
-            throw new ArgumentNullException(nameof(entity));
-        
         //_bookRepository.Delete(entity);
         _manager.BookRepository.Delete(entity);
+        _manager.SaveChanges();
     }
 
     public IEnumerable<Book> GetAllBooks(Expression<Func<Book, bool>> expression = null, 

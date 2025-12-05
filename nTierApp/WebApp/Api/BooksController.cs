@@ -37,7 +37,7 @@ public class BooksController : ControllerBase
     {
         _bookService
             .UpdateBook(id, tobeUpdatedBook, true);
-        return Ok(tobeUpdatedBook);
+        return NoContent(); // 204
     }
 
     // api/books/{id}
