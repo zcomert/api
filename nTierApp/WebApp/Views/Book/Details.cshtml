@@ -1,6 +1,7 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿@model Book
 <h1>Detaylar</h1>
+<div>
+    <h2>@Model.Title</h2>
+    <p><strong>Açıklama:</strong> @Model.Price.ToString("C")</p>
+    <p><strong>@Model.Id</strong></p>
+</div>

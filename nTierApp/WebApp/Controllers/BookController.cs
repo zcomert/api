@@ -1,15 +1,31 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Entities.Models;
+using Microsoft.AspNetCore.Mvc;
+using Services.Contracts;
 
 namespace WebApp.Controllers;
 
 public class BookController : Controller
 {
+    private readonly IServiceManager _manager;
+
+    public BookController(IServiceManager manager)
+    {
+        _manager = manager;
+    }
+
     public IActionResult Index()
     {
-        return View();
+        var books = _manager.BookService.GetAllBooks();
+        return View(books);
     }
     public IActionResult Details()
     {
-        return View();
+        var book = new Book()
+        {
+            Id = 101,
+            Title = "C# Advanced Topics",
+            Price = 49.99M
+        };
+        return View(book);
     }
 }
