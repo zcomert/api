@@ -73,3 +73,14 @@
 - nTier/n-Layer Mimari
 - Generic Repository Design Pattern
 - Unit of Work
+- Servis Katmanının Organizasyonu
+
+# MVC Şablonu
+
+- `AddControllersWithViews`
+- `MapControllerRoute`
+- @model Direktifi
+- `Controller` ve `ControllerBase`
+- `_Layout`
+- `_ViewImports`
+- `_ViewStart`
