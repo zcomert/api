@@ -29,7 +29,9 @@ else
                     <td>@item.Title</td>
                     <td class="text-end">@item.Price.ToString("C")</td>
                     <td>
-                        <a asp-controller="Book" asp-action="Details" asp-route-id="@item.Id">Details</a>
+                        <a asp-controller="Book" 
+                        asp-action="Details" 
+                        asp-route-id="@item.Id">Detay</a>
                     </td>
                 </tr>
             }

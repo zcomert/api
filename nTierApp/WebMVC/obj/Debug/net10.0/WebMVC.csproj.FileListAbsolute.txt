@@ -1,0 +1,9 @@
+D:\api\nTierApp\WebMVC\obj\Debug\net10.0\rpswa.dswa.cache.json
+D:\api\nTierApp\WebMVC\obj\Debug\net10.0\WebMVC.GeneratedMSBuildEditorConfig.editorconfig
+D:\api\nTierApp\WebMVC\obj\Debug\net10.0\WebMVC.AssemblyInfoInputs.cache
+D:\api\nTierApp\WebMVC\obj\Debug\net10.0\WebMVC.AssemblyInfo.cs
+D:\api\nTierApp\WebMVC\obj\Debug\net10.0\WebMVC.csproj.CoreCompileInputs.cache
+D:\api\nTierApp\WebMVC\obj\Debug\net10.0\WebMVC.MvcApplicationPartsAssemblyInfo.cache
+D:\api\nTierApp\WebMVC\obj\Debug\net10.0\WebMVC.RazorAssemblyInfo.cache
+D:\api\nTierApp\WebMVC\obj\Debug\net10.0\WebMVC.RazorAssemblyInfo.cs
+D:\api\nTierApp\WebMVC\obj\Debug\net10.0\WebMVC.sourcelink.json

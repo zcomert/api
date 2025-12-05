@@ -18,14 +18,11 @@ public class BookController : Controller
         var books = _manager.BookService.GetAllBooks();
         return View(books);
     }
-    public IActionResult Details()
+    public IActionResult Details([FromRoute(Name ="id")] int id)
     {
-        var book = new Book()
-        {
-            Id = 101,
-            Title = "C# Advanced Topics",
-            Price = 49.99M
-        };
+        var book = _manager
+            .BookService
+            .GetBookById(id);
         return View(book);
     }
 }
