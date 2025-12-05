@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        :root {
+            --primary: #0066ff;
+            --dark: #1a1a1a;
+            --light: #f5f5f5;
+        }
+
+        body {
+            margin: 0;
+            font-family: system-ui, sans-serif;
+            background: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        header {
+            background: var(--dark);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+            header h1 {
+                margin: 0;
+                font-size: 2.5rem;
+            }
+
+            header p {
+                margin: 0.5rem 0 0;
+                opacity: 0.9;
+            }
+
+        .cta-button {
+            display: inline-block;
+            margin-top: 1.5rem;
+            padding: 0.75rem 1.5rem;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+        }
+
+        section {
+            max-width: 900px;
+            margin: 3rem auto;
+            padding: 0 1rem;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .feature-box {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            background: var(--dark);
+            color: white;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Hoş Geldiniz</h1>
+        <p>Modern ve hızlı bir web deneyimi için hazırlanmış basit bir landing page</p>
+        <a href="#features" class="cta-button">Özelliklere Göz At</a>
+    </header>
+
+    <section id="features">
+        <h2>Öne Çıkan Özellikler</h2>
+        <div class="features">
+            <div class="feature-box">
+                <h3>Hızlı Yükleme</h3>
+                <p>Minimal tasarım sayesinde sayfa çok hızlı yüklenir ve tüm cihazlarda kararlı çalışır.</p>
+            </div>
+
+            <div class="feature-box">
+                <h3>Responsive Tasarım</h3>
+                <p>Tüm ekran boyutlarına uyumlu grid sistemi ile hem cep telefonu hem de masaüstünde şık görünür.</p>
+            </div>
+
+            <div class="feature-box">
+                <h3>Kolay Özelleştirme</h3>
+                <p>CSS değişkenleri sayesinde renkler ve tipografi hızlı biçimde güncellenebilir.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Telif © 2025</p>
+    </footer>
+
+</body>
+</html>

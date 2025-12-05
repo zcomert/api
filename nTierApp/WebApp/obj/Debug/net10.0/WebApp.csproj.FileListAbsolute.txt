@@ -216,3 +216,7 @@ D:\api\nTierApp\WebApp\obj\Debug\net10.0\WebApp.pdb
 D:\api\nTierApp\WebApp\obj\Debug\net10.0\WebApp.genruntimeconfig.cache
 D:\api\nTierApp\WebApp\obj\Debug\net10.0\ref\WebApp.dll
 D:\api\nTierApp\WebApp\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
+D:\api\nTierApp\WebApp\bin\Debug\net10.0\WebApp.staticwebassets.runtime.json
+D:\api\nTierApp\WebApp\obj\Debug\net10.0\compressed\be9brwqfek-{0}-q22g8gbz4r-q22g8gbz4r.gz
+D:\api\nTierApp\WebApp\obj\Debug\net10.0\WebApp.RazorAssemblyInfo.cache
+D:\api\nTierApp\WebApp\obj\Debug\net10.0\WebApp.RazorAssemblyInfo.cs

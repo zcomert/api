@@ -8,6 +8,7 @@ using Services.Contracts;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
+builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<RepositoryContext>(options =>
 {
@@ -30,7 +31,12 @@ builder.Services.AddScoped<IServiceManager, ServiceManager>();
 
 var app = builder.Build();
 
+app.UseStaticFiles();
 app.MapControllers();
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Book}/{action=Index}/{id?}"
+);
 
 app.MapGet("/books/context", (RepositoryContext context) =>
     Results.Ok(context.Books.ToList())
@@ -84,13 +90,11 @@ app.MapGet("categories/repo", (IRepositoryManager manager) =>
 // 
 app.MapGet("/", (IRepositoryManager manager) =>
 {
-    var books = manager.BookRepository.GetAll();
-    var categories = manager.CategoryRepository.GetAll();
-    
+    var baseUrl = "https://localhost:7169";
     return Results.Ok(new
     {
-        Books = books,
-        Categories = categories
+        Books = $"{baseUrl}/api/books",
+        Categories = $"{baseUrl}/api/categories"
     });
 });
 
