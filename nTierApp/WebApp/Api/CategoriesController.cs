@@ -8,19 +8,20 @@ namespace WebApp.Api;
 [Route("api/categories")]
 public class CategoriesController : ControllerBase
 {
-    private readonly ICategoryService _categoryService;
+    private readonly IServiceManager _manager;
 
-    public CategoriesController(ICategoryService categoryService)
+    public CategoriesController(IServiceManager manager)
     {
-        _categoryService = categoryService;
+        _manager = manager;
     }
 
     // api/categories
     [HttpGet]
     public IActionResult GetAllCategories()
     {
-        var categories = _categoryService
-               .GetAllCategories();
+        var categories = _manager
+            .CategoryService
+            .GetAllCategories();
         return Ok(categories);
     }
 
@@ -28,7 +29,8 @@ public class CategoriesController : ControllerBase
     [HttpGet("{id:int}")]
     public IActionResult GetCategoryById([FromRoute(Name = "id")] int id)
     {
-        var category = _categoryService
+        var category = _manager
+            .CategoryService    
             .GetCategoryById(id);
         return Ok(category);
     }
@@ -37,7 +39,8 @@ public class CategoriesController : ControllerBase
     [HttpPost]
     public IActionResult CreateCategory([FromBody] Category category)
     {
-        var createdCategory = _categoryService
+        var createdCategory = _manager
+            .CategoryService
             .CreateCategory(category);
         return CreatedAtAction(nameof(GetCategoryById),
             new { id = createdCategory.CategoryId }, createdCategory);
@@ -48,7 +51,9 @@ public class CategoriesController : ControllerBase
     public IActionResult UpdateCategory([FromRoute(Name = "id")] int id,
         [FromBody] Category category)
     {
-        _categoryService.UpdateCategory(id, category);
+        _manager
+            .CategoryService
+            .UpdateCategory(id, category);
         return NoContent(); // 204
     }
 
@@ -56,7 +61,9 @@ public class CategoriesController : ControllerBase
     [HttpDelete("{id:int}")]
     public IActionResult DeleteCategory([FromRoute(Name = "id")] int id)
     {
-        _categoryService.DeleteCategory(id);
+        _manager
+            .CategoryService
+            .DeleteCategory(id);
         return NoContent(); // 204
     }
 }

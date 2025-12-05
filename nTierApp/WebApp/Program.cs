@@ -24,6 +24,7 @@ builder.Services.AddScoped<ICategoryService, CategoryManager>();
 //builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 
 builder.Services.AddScoped<IRepositoryManager, RepositoryManager>();
+builder.Services.AddScoped<IServiceManager, ServiceManager>();
 
 
 

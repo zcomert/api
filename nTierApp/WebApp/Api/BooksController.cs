@@ -8,17 +8,17 @@ namespace WebApp.Api;
 [Route("api/books")]
 public class BooksController : ControllerBase
 {
-    private readonly IBookService _bookService;
+    private readonly IServiceManager _manager;
 
-    public BooksController(IBookService bookService)
+    public BooksController(IServiceManager manager)
     {
-        _bookService = bookService;
+        _manager = manager;
     }
 
     [HttpGet] // api/books
     public IActionResult GetAllBooks()
     {
-        var books = _bookService.GetAllBooks();
+        var books = _manager.BookService.GetAllBooks();
         return Ok(books);
     }
 
@@ -26,7 +26,7 @@ public class BooksController : ControllerBase
     [HttpGet("{id:int}")]
     public IActionResult GetBookById(int id)
     { 
-        var book = _bookService.GetBookById(id);
+        var book = _manager.BookService.GetBookById(id);
         return Ok(book);
     }
 
@@ -35,7 +35,8 @@ public class BooksController : ControllerBase
     public IActionResult UpdateBook([FromRoute(Name ="id")] int id,
         [FromBody] Book tobeUpdatedBook)
     {
-        _bookService
+        _manager
+            .BookService
             .UpdateBook(id, tobeUpdatedBook, true);
         return NoContent(); // 204
     }
@@ -44,14 +45,14 @@ public class BooksController : ControllerBase
     [HttpDelete("{id:int}")]
     public IActionResult DeleteBook([FromRoute(Name ="id")] int id)
     {
-        _bookService.DeleteBook(id, true);
+        _manager.BookService.DeleteBook(id, true);
         return NoContent();
     }
 
     [HttpPost] // api/books
     public IActionResult CreateOneBook([FromBody] Book newBook)
     {
-        _bookService.CreateBook(newBook);
+        _manager.BookService.CreateBook(newBook);
         return CreatedAtAction(nameof(GetBookById),
             new { id = newBook.Id }, newBook);
     }
