@@ -19,6 +19,7 @@ public class BookManager : IBookService
             throw new ArgumentNullException(nameof(book));
         
         _manager.BookRepository.Create(book);
+        _manager.SaveChanges();
         return book;
     }
 
@@ -55,6 +56,11 @@ public class BookManager : IBookService
 
     public void UpdateBook(int id, Book book, bool trackChanges)
     {
-        throw new NotImplementedException();
+        var entity = GetBookById(id, trackChanges);
+        entity.Title = book.Title;
+        entity.Price = book.Price;
+        _manager.BookRepository.Update(entity);
+        _manager.SaveChanges();
+
     }
 }

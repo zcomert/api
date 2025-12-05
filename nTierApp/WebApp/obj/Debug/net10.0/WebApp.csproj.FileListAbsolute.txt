@@ -215,3 +215,4 @@ D:\api\nTierApp\WebApp\obj\Debug\net10.0\refint\WebApp.dll
 D:\api\nTierApp\WebApp\obj\Debug\net10.0\WebApp.pdb
 D:\api\nTierApp\WebApp\obj\Debug\net10.0\WebApp.genruntimeconfig.cache
 D:\api\nTierApp\WebApp\obj\Debug\net10.0\ref\WebApp.dll
+D:\api\nTierApp\WebApp\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
