@@ -1,5 +1,6 @@
 <Solution>
   <Project Path="Entities/Entities.csproj" />
+  <Project Path="ExtensionConsoleApp/ExtensionConsoleApp.csproj" Id="62e497d9-1115-458e-a05c-8dfab3178c25" />
   <Project Path="Repositories/Repositories.csproj" />
   <Project Path="Services/Services.csproj" Id="7694bc8d-21de-44c1-8a6d-39720a64f77a" />
   <Project Path="WebApp/WebApp.csproj" Id="3c23f77a-7807-4429-9c84-a59747cfd3c4" />

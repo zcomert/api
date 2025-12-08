@@ -4,28 +4,18 @@ using Repositories;
 using Repositories.Contracts;
 using Services;
 using Services.Contracts;
+using WebApp.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddControllersWithViews();
+builder.Services.ConfigureDbContext(builder.Configuration);
+builder.Services.ConfigureServices();
+builder.Services.ConfigureRepositories();
 
-builder.Services.AddDbContext<RepositoryContext>(options =>
-{
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"),
-        mig => mig.MigrationsAssembly("WebApp"));
-    
-    options.EnableSensitiveDataLogging();
-});
 
-builder.Services.AddScoped<IBookService, BookManager>();
-builder.Services.AddScoped<ICategoryService, CategoryManager>();
 
-//builder.Services.AddScoped<IBookRepository, BookRepository>();
-//builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
-
-builder.Services.AddScoped<IRepositoryManager, RepositoryManager>();
-builder.Services.AddScoped<IServiceManager, ServiceManager>();
 
 
 

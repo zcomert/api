@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "UqVER2YLz6s=",
+  "dgSpecHash": "1wVqm2utxDg=",
   "success": true,
   "projectFilePath": "D:\\api\\nTierApp\\Services\\Services.csproj",
   "expectedPackageFiles": [
@@ -33,6 +33,9 @@
     "C:\\Users\\zafer\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\7.7.1\\microsoft.identitymodel.protocols.openidconnect.7.7.1.nupkg.sha512",
     "C:\\Users\\zafer\\.nuget\\packages\\microsoft.identitymodel.tokens\\7.7.1\\microsoft.identitymodel.tokens.7.7.1.nupkg.sha512",
     "C:\\Users\\zafer\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
+    "C:\\Users\\zafer\\.nuget\\packages\\nlog\\6.0.6\\nlog.6.0.6.nupkg.sha512",
+    "C:\\Users\\zafer\\.nuget\\packages\\nlog.extensions.logging\\6.1.0\\nlog.extensions.logging.6.1.0.nupkg.sha512",
+    "C:\\Users\\zafer\\.nuget\\packages\\nlog.web.aspnetcore\\6.1.0\\nlog.web.aspnetcore.6.1.0.nupkg.sha512",
     "C:\\Users\\zafer\\.nuget\\packages\\system.clientmodel\\1.5.1\\system.clientmodel.1.5.1.nupkg.sha512",
     "C:\\Users\\zafer\\.nuget\\packages\\system.configuration.configurationmanager\\9.0.4\\system.configuration.configurationmanager.9.0.4.nupkg.sha512",
     "C:\\Users\\zafer\\.nuget\\packages\\system.diagnostics.eventlog\\9.0.4\\system.diagnostics.eventlog.9.0.4.nupkg.sha512",
