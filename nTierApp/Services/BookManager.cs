@@ -1,4 +1,5 @@
 ﻿using Entities.Models;
+using Microsoft.Extensions.Logging;
 using Repositories.Contracts;
 using Services.Contracts;
 using System.Linq.Expressions;
@@ -8,9 +9,13 @@ namespace Services;
 public class BookManager : IBookService
 {
     private readonly IRepositoryManager _manager;
-    public BookManager(IRepositoryManager manager)
+    private readonly ILogger<BookManager> _logger;
+    public BookManager(IRepositoryManager manager, 
+        ILogger<BookManager> logger)
     {
         _manager = manager;
+        _logger = logger;
+        _logger.LogInformation("BookManager oluşturuldu.");
     }
 
     public Book CreateBook(Book book)
@@ -20,6 +25,7 @@ public class BookManager : IBookService
         
         _manager.BookRepository.Create(book);
         _manager.SaveChanges();
+        _logger.LogInformation($"Yeni kitap oluşturuldu: {book.Title}");
         return book;
     }
 
@@ -29,11 +35,13 @@ public class BookManager : IBookService
         //_bookRepository.Delete(entity);
         _manager.BookRepository.Delete(entity);
         _manager.SaveChanges();
+        _logger.LogInformation($"Kitap silindi: {entity.Title}");
     }
 
     public IEnumerable<Book> GetAllBooks(Expression<Func<Book, bool>> expression = null, 
         bool trackChanges = false)
     {
+        _logger.LogInformation("Tüm kitaplar getiriliyor.");
         return _manager
             .BookRepository
             .GetAll(expression, trackChanges);
@@ -46,8 +54,10 @@ public class BookManager : IBookService
             .GetOne(b => b.Id.Equals(bookId), trackChanges);
 
         if (book is null)
+        {
+            _logger.LogWarning($"Kitap {bookId} bulunamadı.");
             throw new Exception($"Kitap {bookId} bulunamadı!");
-        
+        }
         return book;
     }
 
@@ -58,6 +68,7 @@ public class BookManager : IBookService
         entity.Price = book.Price;
         _manager.BookRepository.Update(entity);
         _manager.SaveChanges();
+        _logger.LogInformation($"Kitap güncellendi: {entity.Title}");
 
     }
 }

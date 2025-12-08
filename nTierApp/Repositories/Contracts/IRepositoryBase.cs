@@ -2,7 +2,7 @@
 
 namespace Repositories.Contracts;
 
-public interface IRepostioryBase<T>
+public interface IRepositoryBase<T>
 {     
     IQueryable<T> GetAll(Expression<Func<T, bool>>? expression=null,
         bool trackChanges=false);

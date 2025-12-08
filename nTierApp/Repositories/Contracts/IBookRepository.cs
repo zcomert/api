@@ -1,7 +1,7 @@
 ﻿using Entities.Models;
 
 namespace Repositories.Contracts;
-public interface IBookRepository : IRepostioryBase<Book>
+public interface IBookRepository : IRepositoryBase<Book>
 {
    
 }

@@ -4,7 +4,7 @@ using System.Linq.Expressions;
 
 namespace Repositories;
 
-public class RepositoryBase<T> : IRepostioryBase<T>
+public class RepositoryBase<T> : IRepositoryBase<T>
     where T:class
 {
     protected readonly RepositoryContext _context;

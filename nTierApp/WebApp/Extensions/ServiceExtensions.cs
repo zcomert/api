@@ -31,6 +31,7 @@ public static class ServiceExtensions
     {
         services.AddScoped<IBookRepository, BookRepository>();
         services.AddScoped<ICategoryRepository, CategoryRepository>();
+        services.AddScoped<IAuthorRepository, AuthorRepository>();
         services.AddScoped<IRepositoryManager, RepositoryManager>();
     }
 }
