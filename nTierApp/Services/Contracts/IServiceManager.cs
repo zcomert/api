@@ -3,5 +3,6 @@
 public interface IServiceManager
 {
     IBookService BookService { get; }
-    ICategoryService CategoryService { get; }   
+    ICategoryService CategoryService { get; }  
+    IAuthorService AuthorService { get; }
 }

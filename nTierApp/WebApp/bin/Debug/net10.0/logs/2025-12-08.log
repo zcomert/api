@@ -14,3 +14,79 @@
    at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
    at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
    at Program.<Main>$(String[] args) in D:\api\nTierApp\WebApp\Program.cs:line 28
+2025-12-08 12:30:44.4075|ERROR|WebApp.Program|Bir hata oluştu ve uygulama durdu! Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in D:\api\nTierApp\WebApp\Program.cs:line 28
+2025-12-08 12:31:09.3768|ERROR|WebApp.Program|Bir hata oluştu ve uygulama durdu! Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in D:\api\nTierApp\WebApp\Program.cs:line 28
+2025-12-08 12:31:31.2782|ERROR|WebApp.Program|Bir hata oluştu ve uygulama durdu! Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in D:\api\nTierApp\WebApp\Program.cs:line 28
+2025-12-08 12:31:57.8985|ERROR|WebApp.Program|Bir hata oluştu ve uygulama durdu! Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in D:\api\nTierApp\WebApp\Program.cs:line 28
+2025-12-08 12:32:49.9076|ERROR|WebApp.Program|Bir hata oluştu ve uygulama durdu! Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in D:\api\nTierApp\WebApp\Program.cs:line 28
+2025-12-08 13:07:56.6121|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-08 13:07:56.6289|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-08 13:08:10.4920|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-08 13:08:23.7133|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-08 13:08:23.7133|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-08 13:21:53.5716|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-08 13:21:53.5906|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-08 13:22:42.5854|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-08 13:22:50.2404|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-08 13:22:50.2404|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-08 13:25:01.1060|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-08 13:25:01.1060|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-08 13:25:12.9123|INFO|Services.AuthorManager|Tüm yazarlar getirildi. 
+2025-12-08 13:25:50.3373|INFO|Services.AuthorManager|Yazar getirildi. Id: 1 
+2025-12-08 13:26:07.6088|INFO|Services.AuthorManager|Tüm yazarlar getirildi. 
+2025-12-08 13:26:16.0729|INFO|Services.AuthorManager|Yazar getirildi. Id: 1 
+2025-12-08 13:27:38.8817|INFO|Services.AuthorManager|Yeni yazar eklendi: Mckenzie Frami 
+2025-12-08 13:29:32.7825|INFO|Services.AuthorManager|Yazar getirildi. Id: 1 
+2025-12-08 13:29:32.8023|INFO|Services.AuthorManager|Yazar güncellendi. Id: 1 
+2025-12-08 13:29:51.3205|INFO|Services.AuthorManager|Yazar getirildi. Id: 1 
+2025-12-08 13:29:51.3205|INFO|Services.AuthorManager|Yazar güncellendi. Id: 1 
+2025-12-08 13:30:09.3013|INFO|Services.AuthorManager|Yeni yazar eklendi: Jesus Walker 
+2025-12-08 13:30:09.3999|INFO|Services.AuthorManager|Yeni yazar eklendi: Riley Kautzer 
+2025-12-08 13:30:09.4785|INFO|Services.AuthorManager|Yeni yazar eklendi: Katelynn Torphy 
+2025-12-08 13:30:09.5569|INFO|Services.AuthorManager|Yeni yazar eklendi: Cole Stamm 
+2025-12-08 13:30:09.6467|INFO|Services.AuthorManager|Yeni yazar eklendi: Euna Jast 
+2025-12-08 13:30:09.7379|INFO|Services.AuthorManager|Yeni yazar eklendi: Christa Gutkowski 
+2025-12-08 13:30:09.8173|INFO|Services.AuthorManager|Yeni yazar eklendi: Frederique Altenwerth 
+2025-12-08 13:30:09.8914|INFO|Services.AuthorManager|Yeni yazar eklendi: Ally Feest 
+2025-12-08 13:30:09.9838|INFO|Services.AuthorManager|Yeni yazar eklendi: Nakia Hickle 
+2025-12-08 13:30:10.0627|INFO|Services.AuthorManager|Yeni yazar eklendi: Madilyn Okuneva 
+2025-12-08 13:30:14.1659|INFO|Services.AuthorManager|Tüm yazarlar getirildi. 
+2025-12-08 13:38:06.5714|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-08 13:38:06.5813|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-08 13:38:15.9329|INFO|Services.AuthorManager|Tüm yazarlar getirildi. 
+2025-12-08 13:38:22.7613|INFO|Services.AuthorManager|Tüm yazarlar getirildi. 

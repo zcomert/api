@@ -24,6 +24,7 @@ public static class ServiceExtensions
     {
         services.AddScoped<IBookService, BookManager>();
         services.AddScoped<ICategoryService, CategoryManager>();
+        services.AddScoped<IAuthorService, AuthorManager>();
         services.AddScoped<IServiceManager, ServiceManager>();
     }
 

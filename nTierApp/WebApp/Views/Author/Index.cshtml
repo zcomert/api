@@ -1,0 +1,25 @@
+﻿@model IEnumerable<Author>
+@using System.Linq
+
+<h1>Yazarlar (@(Model?.Count() ?? 0))</h1>
+
+@if (Model == null || !Model.Any())
+{
+    <p>Hiç yazar bulunamadı.</p>
+}
+else
+{
+    <div class="row">
+        @foreach (var author in Model)
+        {
+            <div class="col-md-4 mb-3">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">@((author?.FirstName ?? "") + " " + (author?.LastName ?? ""))</h5>
+                        <p class="card-text">@* Ek bilgiler varsa buraya ekleyin (örn. e-posta, biyografi) *@</p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
