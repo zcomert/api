@@ -4,15 +4,15 @@
     ViewData["Title"] = "Kitaplar";
 }
 
-<h1>Kitaplar</h1>
 
+<h3 class="display-3">Kitaplar</h3>
 @if (Model == null || !Model.Any())
 {
     <p>No books available.</p>
 }
 else
 {
-    <table class="table">
+    <table class="table table-responsive table-striped">
         <thead>
             <tr>
                 <th>Id</th>
@@ -29,9 +29,13 @@ else
                     <td>@item.Title</td>
                     <td class="text-end">@item.Price.ToString("C")</td>
                     <td>
-                        <a asp-controller="Book" 
-                        asp-action="Details" 
-                        asp-route-id="@item.Id">Detay</a>
+                        <a class="btn btn-primary"
+                           asp-controller="Book"
+                           asp-action="Details"
+                           asp-route-id="@item.Id">
+                           Detay
+                           <i class="fa fa-solid fa-arrow-right"></i>
+                       </a>
                     </td>
                 </tr>
             }

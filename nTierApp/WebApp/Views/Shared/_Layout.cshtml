@@ -4,11 +4,15 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
+    <script type="importmap"></script>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/lib/font-awesome/css/all.css" asp-append-version="true" />
 </head>
 <body>
-    <h1>Olgunlar Kitabevi</h1>
-    <p>Menüler</p>
-    <div>
+    
+    @await Html.PartialAsync("_TopMenu")
+    @await Html.PartialAsync("_Brand")
+    <div class="container">
         @RenderBody()
     </div>
     <footer>
@@ -16,5 +20,9 @@
               &copy; 2025, Kasım
         </p>
     </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

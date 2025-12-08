@@ -1,0 +1,22 @@
+﻿
+@{  
+    var homeUrl = Url.Content("~/");
+}
+
+<header class="container-fluid border-bottom bg-body-tertiary" role="banner">
+    <div class="container d-flex align-items-center justify-content-between py-3">
+        <a class="navbar-brand d-flex align-items-center text-decoration-none text-reset" href="@homeUrl" aria-label="Olgular Kitabevi - Ana Sayfa">
+            <!-- Inline SVG book icon (scalable and theme-friendly) -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="me-3" aria-hidden="true" focusable="false">
+                <path d="M2 7v13a1 1 0 0 0 1 1h16V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2z"></path>
+                <path d="M22 6v13"></path>
+                <path d="M6 4v16"></path>
+            </svg>
+
+            <div class="d-flex flex-column">
+                <span class="h5 mb-0 fw-semibold">Olgular Kitabevi</span>
+                <small class="text-muted">Bilginin yolculuğuna hoş geldiniz</small>
+            </div>
+        </a>
+    </div>
+</header>
