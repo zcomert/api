@@ -134,3 +134,10 @@
 2025-12-08 16:28:48.9678|INFO|Services.AuthorManager|Tüm yazarlar getirildi. 
 2025-12-08 16:29:01.5077|INFO|Services.BookManager|BookManager oluşturuldu. 
 2025-12-08 16:29:01.5077|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-08 16:37:09.4130|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-08 16:37:09.4130|INFO|Services.CategoryManager|Tüm kategoriler getirildi. 
+2025-12-08 16:37:09.4383|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-08 16:37:17.7700|INFO|Services.CategoryManager|Tüm kategoriler getirildi. 
+2025-12-08 16:37:19.5651|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-08 16:37:19.5651|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-08 16:37:20.5822|INFO|Services.CategoryManager|Tüm kategoriler getirildi. 

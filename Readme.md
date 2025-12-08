@@ -84,3 +84,11 @@
 - `_Layout`
 - `_ViewImports`
 - `_ViewStart`
+
+# Layout
+
+- Layout
+- PartivalView
+- Extension Methods
+- IServiceCollection Extensions
+- Project Configuration
