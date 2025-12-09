@@ -92,3 +92,18 @@
 - Extension Methods
 - IServiceCollection Extensions
 - Project Configuration
+
+# CORS
+
+- Kaynak erişim politikası
+- Etki alanı kısıtlama
+- İstek türü denetimi
+- Güvenli veri paylaşımı
+
+# Global Hata Yönetimi
+
+- Merkezi hata yönetimi
+- Tutarlı istemci yanıtı
+- Ayrıştırılmış özel istisnalar
+- Yapılandırılabilir durum kodları
+- Güvenilir günlük üretimi
