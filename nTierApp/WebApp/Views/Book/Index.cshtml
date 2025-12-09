@@ -8,13 +8,13 @@
 <h3 class="display-3">Kitaplar</h3>
 @if (Model == null || !Model.Any())
 {
-    <p>No books available.</p>
+    <p>Herhangi bir kitap yok!</p>
 }
 else
 {
     <div class="row">
         <div class="col-md-3">
-            @await Component.InvokeAsync("LastNBooks", new { n = 3 })")
+            @await Component.InvokeAsync("LastNBooks", new { n = 3 })
         </div>
         <div class="col-md-9">
             <table class="table table-responsive table-striped">

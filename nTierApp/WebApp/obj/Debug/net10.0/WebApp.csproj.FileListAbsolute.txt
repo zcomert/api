@@ -450,7 +450,6 @@ D:\api\nTierApp\WebApp\obj\Debug\net10.0\compressed\beatae7yhj-{0}-mrlpezrjn3-mr
 D:\api\nTierApp\WebApp\obj\Debug\net10.0\compressed\wkewmqfcrd-{0}-lzl9nlhx6b-lzl9nlhx6b.gz
 D:\api\nTierApp\WebApp\obj\Debug\net10.0\compressed\35hpgso43m-{0}-ag7o75518u-ag7o75518u.gz
 D:\api\nTierApp\WebApp\obj\Debug\net10.0\compressed\0fxtxno2m0-{0}-x0q3zqp4vz-x0q3zqp4vz.gz
-D:\api\nTierApp\WebApp\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
 D:\api\nTierApp\WebApp\obj\Debug\net10.0\compressed\siwt0tsb8r-{0}-bqjiyaj88i-bqjiyaj88i.gz
 D:\api\nTierApp\WebApp\obj\Debug\net10.0\compressed\lfp1ivp953-{0}-c2jlpeoesf-c2jlpeoesf.gz
 D:\api\nTierApp\WebApp\obj\Debug\net10.0\compressed\ldq9vexem1-{0}-erw9l3u2r3-erw9l3u2r3.gz
@@ -502,3 +501,4 @@ D:\api\nTierApp\WebApp\obj\Debug\net10.0\compressed\luwsjdogc0-{0}-2z0ns9nrw6-2z
 D:\api\nTierApp\WebApp\obj\Debug\net10.0\compressed\6k7fv1pfqa-{0}-muycvpuwrr-muycvpuwrr.gz
 D:\api\nTierApp\WebApp\obj\Debug\net10.0\compressed\xlfud65edp-{0}-87fc7y1x7t-87fc7y1x7t.gz
 D:\api\nTierApp\WebApp\obj\Debug\net10.0\compressed\y4mb16hq9n-{0}-mlv21k5csn-mlv21k5csn.gz
+D:\api\nTierApp\WebApp\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt

@@ -22,7 +22,7 @@ try
         options.RespectBrowserAcceptHeader = true;
         options.ReturnHttpNotAcceptable = true; // 406
     })
-    .AddXmlDataContractSerializerFormatters(); // XML desteði ekle
+    .AddXmlDataContractSerializerFormatters(); // XML desteï¿½i ekle
 
 
     builder.Services.AddControllersWithViews();
@@ -50,16 +50,16 @@ try
         pattern: "{controller=Book}/{action=Index}/{id?}"
     );
 
-    if(app.Environment.IsDevelopment())
+    if (app.Environment.IsDevelopment())
     {
         app.UseCors("AllowAll");
     }
 
-    if(app.Environment.IsProduction())
+    if (app.Environment.IsProduction())
     {
         app.UseCors("CorsPolicy");
     }
-    
+
     app.MapGet("/books/context", (RepositoryContext context) =>
         Results.Ok(context.Books.ToList())
     );
@@ -68,7 +68,7 @@ try
 }
 catch (Exception exception)
 {
-    logger.Error(exception, "Bir hata oluþtu ve uygulama durdu!");
+    logger.Error(exception, "Bir hata oluï¿½tu ve uygulama durdu!");
     throw;
 }
 finally

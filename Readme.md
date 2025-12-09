@@ -7,9 +7,9 @@
 
 - `CLI` ile Proje Oluşturma
 - `Visual Studio` ile Proje Oluşturma
-- ASP.NET Core Empty Proje Şablonu
-- ASP.NET Web Api Proje Şablonu
-- Swagger
+- `ASP.NET Core Empty` Proje Şablonu
+- `ASP.NET Web Api` Proje Şablonu
+- `Swagger`ile API Dokümantasyonu
 
 # MVC Proje Deseni
 
@@ -79,7 +79,7 @@
 
 - `AddControllersWithViews`
 - `MapControllerRoute`
-- @model Direktifi
+- `@model` Direktifi
 - `Controller` ve `ControllerBase`
 - `_Layout`
 - `_ViewImports`
@@ -100,6 +100,13 @@
 - İstek türü denetimi
 - Güvenli veri paylaşımı
 
+# Asenkron Kod
+
+- `Task`
+- `Task<T>`
+- `async` ve `await`
+- Verimli kaynak kullanımı
+
 # Global Hata Yönetimi
 
 - Merkezi hata yönetimi
@@ -107,6 +114,7 @@
 - Ayrıştırılmış özel istisnalar
 - Yapılandırılabilir durum kodları
 - Güvenilir günlük üretimi
+- `IExceptionHandler`
 
 # ViewComponent
 
