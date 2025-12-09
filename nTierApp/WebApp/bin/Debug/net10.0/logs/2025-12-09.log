@@ -112,3 +112,29 @@
    at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
    at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-12-09 12:06:13.3926|INFO|Services.CategoryManager|Tüm kategoriler getirildi. 
+2025-12-09 12:06:13.3926|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 12:06:13.4220|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 12:07:34.2291|INFO|Services.CategoryManager|Tüm kategoriler getirildi. 
+2025-12-09 12:07:35.7541|INFO|Services.CategoryManager|Tüm kategoriler getirildi. 
+2025-12-09 12:07:36.9366|INFO|Services.CategoryManager|Tüm kategoriler getirildi. 
+2025-12-09 12:07:37.9694|INFO|Services.CategoryManager|Tüm kategoriler getirildi. 
+2025-12-09 12:07:38.9527|INFO|Services.CategoryManager|Tüm kategoriler getirildi. 
+2025-12-09 12:07:39.8009|INFO|Services.CategoryManager|Tüm kategoriler getirildi. 
+2025-12-09 12:07:40.8337|INFO|Services.CategoryManager|Tüm kategoriler getirildi. 
+2025-12-09 12:07:42.1237|INFO|Services.CategoryManager|Tüm kategoriler getirildi. 
+2025-12-09 12:07:43.1343|INFO|Services.CategoryManager|Tüm kategoriler getirildi. 
+2025-12-09 12:07:47.4662|INFO|Services.CategoryManager|Tüm kategoriler getirildi. 
+2025-12-09 12:07:51.8962|INFO|Services.CategoryManager|Tüm kategoriler getirildi. 
+2025-12-09 12:08:43.0926|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 12:08:43.0926|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 12:08:52.1468|INFO|Services.CategoryManager|Tüm kategoriler getirildi. 
+2025-12-09 12:09:09.1442|INFO|Services.CategoryManager|Tüm kategoriler getirildi. 
+2025-12-09 12:09:20.2094|INFO|Services.CategoryManager|Tüm kategoriler getirildi. 
+2025-12-09 12:11:05.7965|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 12:11:05.7965|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 12:11:15.1972|INFO|Services.CategoryManager|Tüm kategoriler getirildi. 
+2025-12-09 12:57:32.8991|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 12:57:32.9050|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 12:58:53.0736|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 12:58:53.0789|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 

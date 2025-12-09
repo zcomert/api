@@ -1,4 +1,5 @@
-﻿using Entities.Models;
+﻿using Entities.Exceptions;
+using Entities.Models;
 using Microsoft.Extensions.Logging;
 using Repositories.Contracts;
 using Services.Contracts;
@@ -60,8 +61,8 @@ public class AuthorManager : IAuthorService
 
         if(author is null)
         {
-            _logger.LogError($"Yazar bulunamadı. Id: {id}");
-            throw new ArgumentNullException(nameof(author));
+            //_logger.LogError($"Yazar bulunamadı. Id: {id}");
+            throw new AuthorNotFoundException(id);
         }
         _logger.LogInformation($"Yazar getirildi. Id: {id}");
         return author;

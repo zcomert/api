@@ -1,4 +1,5 @@
-﻿using Entities.Models;
+﻿using Entities.Exceptions;
+using Entities.Models;
 using Microsoft.Extensions.Logging;
 using Repositories.Contracts;
 using Services.Contracts;
@@ -56,8 +57,8 @@ public class CategoryManager : ICategoryService
 
         if (category is null)
         {
-            _logger.LogError($"Kategory id: {categoryId} bulunamadı.");
-            throw new ArgumentNullException(nameof(category));
+            //_logger.LogError($"Kategory id: {categoryId} bulunamadı.");
+            throw new CategoryNotFoundException(categoryId);
         }
 
         return category;

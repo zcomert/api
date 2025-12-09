@@ -35,4 +35,24 @@ public static class ServiceExtensions
         services.AddScoped<IAuthorRepository, AuthorRepository>();
         services.AddScoped<IRepositoryManager, RepositoryManager>();
     }
+
+    // ConfigureCors
+    public static void ConfigureCors(this IServiceCollection services)
+    {
+        services.AddCors(options => {
+            
+            options.AddPolicy("AllowAll", builder =>
+            {
+                builder.AllowAnyOrigin()
+                .AllowAnyHeader()
+                .AllowAnyMethod();
+            });
+
+            // Sadece belirli kaynaklara izin vermek için:
+            options.AddPolicy("CorsPolicy", builder =>
+                builder.WithOrigins("https://www.my-frontend.com", "http://localhost:3000") // Sadece bu kaynaklara izin ver.
+                       .WithMethods("GET", "POST", "PUT") // Sadece belirli metotlara izin ver.
+                       .WithHeaders("Content-Type", "Authorization")); // Sadece belirli başlıklara izin ver.
+        });
+    }
 }
