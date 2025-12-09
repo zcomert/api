@@ -160,3 +160,138 @@
 2025-12-09 13:30:36.9566|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
 2025-12-09 13:32:36.5326|INFO|Services.BookManager|BookManager oluşturuldu. 
 2025-12-09 13:32:36.5326|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 13:41:31.4198|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 13:41:31.4198|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 13:42:23.1022|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 13:42:23.1022|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 13:43:41.8392|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 13:43:41.8392|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 13:49:48.8812|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 13:49:48.8914|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 13:49:54.7248|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 13:49:54.7248|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 13:50:45.4502|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 13:50:45.4502|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 13:50:53.1304|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 13:50:53.1304|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 13:51:40.3851|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 13:51:40.3851|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 13:52:03.8270|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 13:52:03.8270|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 13:54:09.2065|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 13:54:09.2177|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 13:54:15.5478|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 13:54:15.5478|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 13:59:10.5909|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 13:59:10.5909|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 13:59:18.4356|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 13:59:18.4356|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 13:59:35.9270|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 13:59:36.2388|INFO|Services.BookManager|Yeni kitap oluşturuldu: Yoldaki İşaretler 
+2025-12-09 13:59:36.2574|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 13:59:36.2574|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 14:02:01.0567|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 14:02:01.0567|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 14:06:02.0034|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 14:06:02.3343|ERROR|WebApp.Middleware.GlobalExceptionHandler|Beklenmeyen bir hata oluştu. Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'Title', table 'NtierAppDB.dbo.Books'; column does not allow nulls. INSERT fails.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+ClientConnectionId:0176c907-694a-43b3-bd6c-5075ee559c19
+Hata Numarası: 515,Durum: 2,Sınıf:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__114_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at Repositories.RepositoryManager.SaveChanges() in D:\api\nTierApp\Repositories\RepositoryManager.cs:line 32
+   at Services.BookManager.CreateBook(Book book) in D:\api\nTierApp\Services\BookManager.cs:line 28
+   at WebApp.Areas.Admin.Controllers.BookController.Create(Book book)
+   at lambda_method307(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-12-09 14:07:57.1792|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 14:07:57.1952|ERROR|WebApp.Middleware.GlobalExceptionHandler|Beklenmeyen bir hata oluştu. Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'Title', table 'NtierAppDB.dbo.Books'; column does not allow nulls. INSERT fails.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+ClientConnectionId:0176c907-694a-43b3-bd6c-5075ee559c19
+Hata Numarası: 515,Durum: 2,Sınıf:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__114_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at Repositories.RepositoryManager.SaveChanges() in D:\api\nTierApp\Repositories\RepositoryManager.cs:line 32
+   at Services.BookManager.CreateBook(Book book) in D:\api\nTierApp\Services\BookManager.cs:line 28
+   at WebApp.Areas.Admin.Controllers.BookController.Create(Book book)
+   at lambda_method332(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-12-09 14:08:15.6327|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 14:08:15.6423|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 14:08:25.2379|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 14:08:25.2379|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 14:08:28.2001|INFO|Services.BookManager|BookManager oluşturuldu. 
