@@ -444,3 +444,244 @@ Hata Numarası: 515,Durum: 2,Sınıf:16
 2025-12-09 16:48:46.1908|INFO|Services.BookManager|Kitap silindi: Yoldaki İşaretler 
 2025-12-09 16:48:46.2103|INFO|Services.BookManager|BookManager oluşturuldu. 
 2025-12-09 16:48:46.2103|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 16:49:21.2516|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 16:49:21.2516|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 16:49:38.4644|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 16:49:38.4644|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 17:32:42.8159|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 17:32:42.8274|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 17:32:53.2455|INFO|Services.AuthorManager|Tüm yazarlar getirildi. 
+2025-12-09 17:32:53.3409|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 17:32:53.3409|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 17:32:53.3409|INFO|Services.CategoryManager|Tüm kategoriler getirildi. 
+2025-12-09 17:32:59.3335|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 17:32:59.3335|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 17:33:00.8743|INFO|Services.AuthorManager|Tüm yazarlar getirildi. 
+2025-12-09 17:33:00.8743|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 17:33:00.8743|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 17:33:00.8743|INFO|Services.CategoryManager|Tüm kategoriler getirildi. 
+2025-12-09 17:33:38.1471|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 17:33:38.1471|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 17:33:40.1887|INFO|Services.AuthorManager|Tüm yazarlar getirildi. 
+2025-12-09 17:33:40.1887|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 17:33:40.1887|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 17:33:40.2018|INFO|Services.CategoryManager|Tüm kategoriler getirildi. 
+2025-12-09 17:33:43.7316|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 17:33:43.7316|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 17:33:44.0464|INFO|Services.AuthorManager|Tüm yazarlar getirildi. 
+2025-12-09 17:33:44.0464|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 17:33:44.0464|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 17:33:44.0464|INFO|Services.CategoryManager|Tüm kategoriler getirildi. 
+2025-12-09 17:33:45.0839|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 17:33:45.0839|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 17:34:01.3794|INFO|Services.AuthorManager|Tüm yazarlar getirildi. 
+2025-12-09 17:34:01.3794|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 17:34:01.3877|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 17:34:01.3877|INFO|Services.CategoryManager|Tüm kategoriler getirildi. 
+2025-12-09 17:43:58.2939|INFO|Services.AuthorManager|Tüm yazarlar getirildi. 
+2025-12-09 17:44:00.0446|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 17:44:00.0446|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 17:44:00.0446|INFO|Services.CategoryManager|Tüm kategoriler getirildi. 
+2025-12-09 17:50:38.8615|INFO|Services.AuthorManager|Tüm yazarlar getirildi. 
+2025-12-09 17:50:38.9793|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 17:50:38.9793|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 17:50:38.9934|INFO|Services.CategoryManager|Tüm kategoriler getirildi. 
+2025-12-09 17:50:39.0839|ERROR|WebApp.Middleware.GlobalExceptionHandler|Beklenmeyen bir hata oluştu. System.InvalidOperationException: A view component named 'TotalBooks' could not be found. A view component must be a public non-abstract class, not contain any generic parameters, and either be decorated with 'ViewComponentAttribute' or have a class name ending with the 'ViewComponent' suffix. A view component must not be decorated with 'NonViewComponentAttribute'.
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentHelper.InvokeAsync(String name, Object arguments)
+   at AspNetCoreGeneratedDocument.Areas_Admin_Views_Dashboard_Index#2.<ExecuteAsync>d__13#2.MoveNext()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-12-09 17:51:21.2298|INFO|Services.AuthorManager|Tüm yazarlar getirildi. 
+2025-12-09 17:51:21.2380|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 17:51:21.2380|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 17:51:21.2380|INFO|Services.CategoryManager|Tüm kategoriler getirildi. 
+2025-12-09 17:51:21.2626|ERROR|WebApp.Middleware.GlobalExceptionHandler|Beklenmeyen bir hata oluştu. System.InvalidOperationException: A view component named 'TotalBooks' could not be found. A view component must be a public non-abstract class, not contain any generic parameters, and either be decorated with 'ViewComponentAttribute' or have a class name ending with the 'ViewComponent' suffix. A view component must not be decorated with 'NonViewComponentAttribute'.
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentHelper.InvokeAsync(String name, Object arguments)
+   at AspNetCoreGeneratedDocument.Areas_Admin_Views_Dashboard_Index#2.<ExecuteAsync>d__13#2.MoveNext()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-12-09 17:51:22.2845|INFO|Services.AuthorManager|Tüm yazarlar getirildi. 
+2025-12-09 17:51:22.2845|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 17:51:22.2845|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 17:51:22.2845|INFO|Services.CategoryManager|Tüm kategoriler getirildi. 
+2025-12-09 17:51:22.2985|ERROR|WebApp.Middleware.GlobalExceptionHandler|Beklenmeyen bir hata oluştu. System.InvalidOperationException: A view component named 'TotalBooks' could not be found. A view component must be a public non-abstract class, not contain any generic parameters, and either be decorated with 'ViewComponentAttribute' or have a class name ending with the 'ViewComponent' suffix. A view component must not be decorated with 'NonViewComponentAttribute'.
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentHelper.InvokeAsync(String name, Object arguments)
+   at AspNetCoreGeneratedDocument.Areas_Admin_Views_Dashboard_Index#2.<ExecuteAsync>d__13#2.MoveNext()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-12-09 17:51:37.8581|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 17:51:37.8581|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 17:51:44.0741|INFO|Services.AuthorManager|Tüm yazarlar getirildi. 
+2025-12-09 17:51:44.1768|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 17:51:44.1768|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 17:51:44.1768|INFO|Services.CategoryManager|Tüm kategoriler getirildi. 
+2025-12-09 17:51:44.2082|ERROR|WebApp.Middleware.GlobalExceptionHandler|Beklenmeyen bir hata oluştu. System.InvalidOperationException: A view component named 'TotalBooks' could not be found. A view component must be a public non-abstract class, not contain any generic parameters, and either be decorated with 'ViewComponentAttribute' or have a class name ending with the 'ViewComponent' suffix. A view component must not be decorated with 'NonViewComponentAttribute'.
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentHelper.InvokeAsync(String name, Object arguments)
+   at AspNetCoreGeneratedDocument.Areas_Admin_Views_Dashboard_Index.ExecuteAsync()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-12-09 17:52:27.2482|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 17:52:27.2482|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 17:52:32.8660|INFO|Services.AuthorManager|Tüm yazarlar getirildi. 
+2025-12-09 17:52:32.9562|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 17:52:32.9562|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 17:52:32.9562|INFO|Services.CategoryManager|Tüm kategoriler getirildi. 
+2025-12-09 17:52:32.9898|ERROR|WebApp.Middleware.GlobalExceptionHandler|Beklenmeyen bir hata oluştu. System.InvalidOperationException: A view component named 'TotalBooks' could not be found. A view component must be a public non-abstract class, not contain any generic parameters, and either be decorated with 'ViewComponentAttribute' or have a class name ending with the 'ViewComponent' suffix. A view component must not be decorated with 'NonViewComponentAttribute'.
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentHelper.InvokeAsync(String name, Object arguments)
+   at AspNetCoreGeneratedDocument.Areas_Admin_Views_Dashboard_Index.ExecuteAsync()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-12-09 17:53:51.3471|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 17:53:51.3563|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 17:53:56.5758|INFO|Services.AuthorManager|Tüm yazarlar getirildi. 
+2025-12-09 17:53:56.6856|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 17:53:56.6856|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 17:53:56.6856|INFO|Services.CategoryManager|Tüm kategoriler getirildi. 
+2025-12-09 17:53:56.7225|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 17:55:38.7983|INFO|Services.AuthorManager|Tüm yazarlar getirildi. 
+2025-12-09 17:55:38.9843|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 17:55:38.9843|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 17:55:38.9843|INFO|Services.CategoryManager|Tüm kategoriler getirildi. 
+2025-12-09 17:55:39.0113|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 17:55:39.0233|ERROR|WebApp.Middleware.GlobalExceptionHandler|Beklenmeyen bir hata oluştu. System.InvalidOperationException: A view component named 'TotalCategories' could not be found. A view component must be a public non-abstract class, not contain any generic parameters, and either be decorated with 'ViewComponentAttribute' or have a class name ending with the 'ViewComponent' suffix. A view component must not be decorated with 'NonViewComponentAttribute'.
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentHelper.InvokeAsync(String name, Object arguments)
+   at AspNetCoreGeneratedDocument.Areas_Admin_Views_Dashboard_Index#1.<ExecuteAsync>d__13#1.MoveNext()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-12-09 17:56:09.3005|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 17:56:09.3115|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 17:56:15.2588|INFO|Services.AuthorManager|Tüm yazarlar getirildi. 
+2025-12-09 17:56:15.3610|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 17:56:15.3610|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 17:56:15.3610|INFO|Services.CategoryManager|Tüm kategoriler getirildi. 
+2025-12-09 17:56:15.4036|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 17:56:15.4036|INFO|Services.CategoryManager|Tüm kategoriler getirildi. 
+2025-12-09 17:57:58.0055|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 17:57:58.0152|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 17:58:04.1329|INFO|Services.AuthorManager|Tüm yazarlar getirildi. 
+2025-12-09 17:58:04.2388|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 17:58:04.2388|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 17:58:04.2388|INFO|Services.CategoryManager|Tüm kategoriler getirildi. 
+2025-12-09 17:58:04.2928|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 17:58:04.2969|INFO|Services.CategoryManager|Tüm kategoriler getirildi. 
+2025-12-09 17:58:04.2969|INFO|Services.AuthorManager|Tüm yazarlar getirildi. 
+2025-12-09 17:59:49.8517|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 17:59:49.8574|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 17:59:55.8308|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 17:59:55.8308|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 17:59:55.9102|INFO|Services.CategoryManager|Tüm kategoriler getirildi. 
+2025-12-09 17:59:55.9238|INFO|Services.AuthorManager|Tüm yazarlar getirildi. 
