@@ -1,4 +1,5 @@
-﻿using Entities.Models;
+﻿using Entities.Exceptions;
+using Entities.Models;
 using Microsoft.Extensions.Logging;
 using Repositories.Contracts;
 using Services.Contracts;
@@ -55,8 +56,8 @@ public class BookManager : IBookService
 
         if (book is null)
         {
-            _logger.LogWarning($"Kitap {bookId} bulunamadı.");
-            throw new Exception($"Kitap {bookId} bulunamadı!");
+            //_logger.LogWarning($"Kitap {bookId} bulunamadı.");
+            throw new BookNotFoundException(bookId);
         }
         return book;
     }

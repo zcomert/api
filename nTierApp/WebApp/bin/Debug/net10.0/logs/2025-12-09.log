@@ -1,0 +1,114 @@
+2025-12-09 11:14:05.0093|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 11:14:05.0313|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 11:14:13.4201|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 11:14:13.4201|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 11:14:20.7930|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 11:14:20.9864|WARN|Services.BookManager|Kitap 100 bulunamadı. 
+2025-12-09 11:14:48.0257|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 11:14:48.0308|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 11:14:55.2423|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 11:14:55.2423|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 11:15:02.2103|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 11:15:02.3570|WARN|Services.BookManager|Kitap 101 bulunamadı. 
+2025-12-09 11:22:49.1135|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 11:22:49.1135|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 11:23:05.4995|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 11:23:05.4995|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 11:23:11.1263|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 11:23:11.3212|WARN|Services.BookManager|Kitap 544 bulunamadı. 
+2025-12-09 11:23:11.3212|ERROR|WebApp.Middleware.GlobalExceptionHandler|Beklenmeyen bir hata oluştu. System.Exception: Kitap 544 bulunamadı!
+   at Services.BookManager.GetBookById(Int32 bookId, Boolean trackChanges) in D:\api\nTierApp\Services\BookManager.cs:line 59
+   at WebApp.Api.BooksController.GetBookById(Int32 id) in D:\api\nTierApp\WebApp\Api\BooksController.cs:line 29
+   at lambda_method74(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-12-09 11:27:13.3640|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 11:27:13.3744|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 11:27:17.7318|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 11:27:21.0457|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 11:27:21.0801|ERROR|WebApp.Middleware.GlobalExceptionHandler|Beklenmeyen bir hata oluştu. Entities.Exceptions.BookNotFoundException: Kitap Id:100 bulunamadı!
+   at Services.BookManager.GetBookById(Int32 bookId, Boolean trackChanges) in D:\api\nTierApp\Services\BookManager.cs:line 60
+   at WebApp.Controllers.BookController.Details(Int32 id) in D:\api\nTierApp\WebApp\Controllers\BookController.cs:line 23
+   at lambda_method61(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-12-09 11:28:35.2468|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 11:28:35.2468|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 11:28:39.2808|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 11:28:42.3657|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 11:28:42.3896|ERROR|WebApp.Middleware.GlobalExceptionHandler|Beklenmeyen bir hata oluştu. Entities.Exceptions.BookNotFoundException: Kitap Id:123 bulunamadı!
+   at Services.BookManager.GetBookById(Int32 bookId, Boolean trackChanges) in D:\api\nTierApp\Services\BookManager.cs:line 60
+   at WebApp.Controllers.BookController.Details(Int32 id) in D:\api\nTierApp\WebApp\Controllers\BookController.cs:line 23
+   at lambda_method61(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-12-09 11:29:31.2870|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 11:29:31.2949|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 11:29:52.7236|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 11:29:55.3357|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 11:29:55.3704|ERROR|WebApp.Middleware.GlobalExceptionHandler|Beklenmeyen bir hata oluştu. Entities.Exceptions.BookNotFoundException: Kitap Id:101 bulunamadı!
+   at Services.BookManager.GetBookById(Int32 bookId, Boolean trackChanges) in D:\api\nTierApp\Services\BookManager.cs:line 60
+   at WebApp.Controllers.BookController.Details(Int32 id) in D:\api\nTierApp\WebApp\Controllers\BookController.cs:line 23
+   at lambda_method61(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)

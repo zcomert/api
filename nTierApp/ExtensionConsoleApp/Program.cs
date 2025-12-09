@@ -1,4 +1,6 @@
-﻿namespace ExtensionConsoleApp;
+﻿using Entities.ErrorModel;
+
+namespace ExtensionConsoleApp;
 
 public class Program
 {
@@ -7,5 +9,13 @@ public class Program
         int number = 10;
         Console.WriteLine($"1'den {number} kadar " +
             $"olan sayıların toplamı = {number.SumToN("Ahmet")}");
+
+        var error = new ErrorDetails()
+        {
+            StatusCode = 404,
+            Message = "Sayfa bulunamadı"
+        };
+        Console.WriteLine(error);
+    
     }
 }

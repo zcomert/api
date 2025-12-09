@@ -4,6 +4,7 @@ using NLog;
 using NLog.Web;
 using Repositories;
 using WebApp.Extensions;
+using WebApp.Middleware;
 
 var logger = NLog.LogManager
     .Setup()
@@ -21,12 +22,13 @@ try
     builder.Services.ConfigureDbContext(builder.Configuration);
     builder.Services.ConfigureServices();
     builder.Services.ConfigureRepositories();
+    builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
 
     builder.Logging.ClearProviders();
     builder.UseNLog();
 
     var app = builder.Build();
-
+    app.UseExceptionHandler(_ => { });
     app.UseStaticFiles();
     app.MapControllers();
     app.MapControllerRoute(
