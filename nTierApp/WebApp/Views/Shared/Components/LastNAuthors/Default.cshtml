@@ -1,2 +1,24 @@
-﻿@model IEnumerable<Category>
+﻿@model IEnumerable<Entities.Models.Author>
+
+<div class="card shadow-sm mb-3">
+    <div class="card-header bg-info text-white">
+        <h5 class="card-title mb-0">Son Eklenen Yazarlar</h5>
+    </div>
+    <ul class="list-group list-group-flush">
+        @if (Model.Any())
+        {
+            @foreach (var author in Model)
+            {
+                <li class="list-group-item">
+                    <i class="fa fa-user text-info me-2"></i> @author.FirstName @author.LastName
+                </li>
+            }
+        }
+        else
+        {
+            <li class="list-group-item">Henüz yazar eklenmemiş.</li>
+        }
+    </ul>
+</div>
+
 

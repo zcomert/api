@@ -1,2 +1,24 @@
-﻿@model IEnumerable<Category>
+﻿@model IEnumerable<Entities.Models.Category>
+
+<div class="card shadow-sm mb-3">
+    <div class="card-header bg-success text-white">
+        <h5 class="card-title mb-0">Son Eklenen Kategoriler</h5>
+    </div>
+    <ul class="list-group list-group-flush">
+        @if (Model.Any())
+        {
+            @foreach (var category in Model)
+            {
+                <li class="list-group-item">
+                    <i class="fa fa-tags text-success me-2"></i> @category.CategoryName
+                </li>
+            }
+        }
+        else
+        {
+            <li class="list-group-item">Henüz kategori eklenmemiş.</li>
+        }
+    </ul>
+</div>
+
 

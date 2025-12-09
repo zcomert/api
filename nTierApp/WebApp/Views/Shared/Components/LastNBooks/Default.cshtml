@@ -1,9 +1,22 @@
-﻿@model IEnumerable<Book>
+﻿@model IEnumerable<Entities.Models.Book>
 
- <h4 class="text-center">Son Kitaplar</h4>
-<ul class="list-group">
-    @foreach (var item in Model)
-    {
-        <li class="list-group-item">@item.Title</li>
-    }
-</ul>
+<div class="card shadow-sm mb-3">
+    <div class="card-header bg-primary text-white">
+        <h5 class="card-title mb-0">Son Eklenen Kitaplar</h5>
+    </div>
+    <ul class="list-group list-group-flush">
+        @if (Model.Any())
+        {
+            @foreach (var book in Model)
+            {
+                <li class="list-group-item">
+                    <i class="fa fa-book text-primary me-2"></i> @book.Title
+                </li>
+            }
+        }
+        else
+        {
+            <li class="list-group-item">Henüz kitap eklenmemiş.</li>
+        }
+    </ul>
+</div>

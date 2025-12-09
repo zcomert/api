@@ -12,33 +12,40 @@
 }
 else
 {
-    <table class="table table-responsive table-striped">
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Title</th>
-                <th class="text-end">Price</th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Model)
-            {
-                <tr>
-                    <td>@item.Id</td>
-                    <td>@item.Title</td>
-                    <td class="text-end">@item.Price.ToString("C")</td>
-                    <td>
-                        <a class="btn btn-primary"
-                           asp-controller="Book"
-                           asp-action="Details"
-                           asp-route-id="@item.Id">
-                           Detay
-                           <i class="fa fa-solid fa-arrow-right"></i>
-                       </a>
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>
+    <div class="row">
+        <div class="col-md-3">
+            @await Component.InvokeAsync("LastNBooks", new { n = 3 })")
+        </div>
+        <div class="col-md-9">
+            <table class="table table-responsive table-striped">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Title</th>
+                        <th class="text-end">Price</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.Id</td>
+                            <td>@item.Title</td>
+                            <td class="text-end">@item.Price.ToString("C")</td>
+                            <td>
+                                <a class="btn btn-primary"
+                                   asp-controller="Book"
+                                   asp-action="Details"
+                                   asp-route-id="@item.Id">
+                                    Detay
+                                    <i class="fa fa-solid fa-arrow-right"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
 }
