@@ -108,9 +108,12 @@
 - Yapılandırılabilir durum kodları
 - Güvenilir günlük üretimi
 
-# ViewComponent 
+# ViewComponent
+
 - Yeniden kullanılabilir bileşenler
-- Ayrık sunum mantığı 
-- Bağımsız veri işleme 
+- Ayrık sunum mantığı
+- Bağımsız veri işleme
 - Hafif modüler yapı
 - Tutarlı arayüz çıktısı
+- `ViewComponent`
+- `IViewComponentResult`
