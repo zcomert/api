@@ -107,3 +107,10 @@
 - Ayrıştırılmış özel istisnalar
 - Yapılandırılabilir durum kodları
 - Güvenilir günlük üretimi
+
+# ViewComponent 
+- Yeniden kullanılabilir bileşenler
+- Ayrık sunum mantığı 
+- Bağımsız veri işleme 
+- Hafif modüler yapı
+- Tutarlı arayüz çıktısı
