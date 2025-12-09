@@ -295,3 +295,152 @@ Hata Numarası: 515,Durum: 2,Sınıf:16
 2025-12-09 14:08:25.2379|INFO|Services.BookManager|BookManager oluşturuldu. 
 2025-12-09 14:08:25.2379|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
 2025-12-09 14:08:28.2001|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 15:32:36.8049|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 15:32:36.8101|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 15:40:00.8781|ERROR|WebApp.Program|Bir hata oluştu ve uygulama durdu! System.InvalidOperationException: EndpointRoutingMiddleware matches endpoints setup by EndpointMiddleware and so must be added to the request execution pipeline before EndpointMiddleware. Please add EndpointRoutingMiddleware by calling 'IApplicationBuilder.UseRouting' inside the call to 'Configure(...)' in the application startup code.
+   at Microsoft.AspNetCore.Builder.EndpointRoutingApplicationBuilderExtensions.VerifyEndpointRoutingMiddlewareIsRegistered(IApplicationBuilder app, IEndpointRouteBuilder& endpointRouteBuilder)
+   at Microsoft.AspNetCore.Builder.EndpointRoutingApplicationBuilderExtensions.UseEndpoints(IApplicationBuilder builder, Action`1 configure)
+   at Program.<Main>$(String[] args) in D:\api\nTierApp\WebApp\Program.cs:line 44
+2025-12-09 15:43:22.7045|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 15:43:22.7212|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 15:43:29.8849|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 15:43:29.8849|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 15:47:07.2352|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 15:47:07.2501|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 15:47:13.5599|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 15:47:13.5599|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 15:47:15.4930|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 15:47:15.7944|ERROR|WebApp.Middleware.GlobalExceptionHandler|Beklenmeyen bir hata oluştu. Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'Title', table 'NtierAppDB.dbo.Books'; column does not allow nulls. INSERT fails.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+ClientConnectionId:9f0dcb53-5ab3-484b-8f4e-484c994ed5ec
+Hata Numarası: 515,Durum: 2,Sınıf:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__114_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at Repositories.RepositoryManager.SaveChanges() in D:\api\nTierApp\Repositories\RepositoryManager.cs:line 32
+   at Services.BookManager.CreateBook(Book book) in D:\api\nTierApp\Services\BookManager.cs:line 28
+   at WebApp.Areas.Admin.Controllers.BookController.Create(Book book) in D:\api\nTierApp\WebApp\Areas\Admin\Controllers\BookController.cs:line 35
+   at lambda_method108(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-12-09 15:49:27.7722|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 15:49:27.8283|INFO|Services.BookManager|Yeni kitap oluşturuldu: Yalnızlar Sözleri 
+2025-12-09 15:49:27.8482|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 15:49:27.8482|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 16:01:47.8120|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 16:01:47.8120|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 16:01:54.2998|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 16:01:54.2998|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 16:01:58.2857|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 16:02:37.6411|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 16:02:37.6411|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 16:02:45.0808|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 16:02:45.0808|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 16:03:01.6893|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 16:04:03.9223|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 16:04:03.9348|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 16:07:31.4222|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 16:07:31.4222|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 16:07:31.4448|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 16:07:31.5663|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 16:07:31.5663|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 16:07:35.5584|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 16:07:35.5584|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 16:07:36.8374|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 16:17:45.4142|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 16:17:45.4142|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 16:17:45.4142|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 16:17:45.5929|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 16:17:49.0463|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 16:17:49.2836|INFO|Services.BookManager|Kitap güncellendi: Clean Code 
+2025-12-09 16:17:49.2836|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 16:17:49.2836|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 16:25:04.9908|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 16:25:04.9995|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 16:25:13.6748|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 16:25:13.6748|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 16:25:15.6084|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 16:25:15.6084|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 16:25:17.8178|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 16:25:17.8178|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 16:25:19.6033|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 16:25:21.0596|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 16:25:21.0596|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 16:25:22.4889|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 16:25:23.8758|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 16:25:23.8758|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 16:26:21.2478|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 16:26:22.9781|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 16:26:22.9781|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 16:26:23.9312|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 16:26:27.2739|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 16:26:27.2739|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 16:26:28.4803|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 16:27:46.9964|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 16:27:46.9970|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 16:27:58.9519|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 16:27:58.9519|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 16:28:02.6175|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 16:28:04.2504|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 16:33:55.4651|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 16:33:55.4651|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 16:33:55.4659|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 16:34:34.7715|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 16:34:34.7715|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 16:34:34.7715|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 16:34:37.3513|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 16:34:37.6195|INFO|Services.BookManager|Kitap güncellendi: Clean Code 
+2025-12-09 16:34:37.6304|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 16:34:37.6304|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 16:42:35.8873|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 16:42:35.8873|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 16:42:35.8873|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 16:42:35.8873|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 16:42:39.6708|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 16:42:40.7934|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 16:42:40.8809|INFO|Services.BookManager|Kitap silindi: Yalnızlar Sözleri 
+2025-12-09 16:42:40.8886|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 16:42:40.8886|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 16:48:38.1899|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 16:48:44.0357|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 16:48:44.0357|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 16:48:45.3716|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 16:48:46.1908|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 16:48:46.1908|INFO|Services.BookManager|Kitap silindi: Yoldaki İşaretler 
+2025-12-09 16:48:46.2103|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 16:48:46.2103|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 

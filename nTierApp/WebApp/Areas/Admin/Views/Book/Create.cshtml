@@ -3,15 +3,17 @@
 <div class="card shadow-sm border-0">
     <div class="card-body">
         <form asp-action="Create" method="post">
+            <div class="text-danger" asp-validation-summary="All"></div>
             <div class="mb-3">
                 <label asp-for="Title" class="form-label">Kitap Adı</label>
                 <input asp-for="Title" class="form-control" placeholder="Kitap adını giriniz." />
+                <span asp-validation-for="Title" class="text-danger"></span>
             </div>
             <div class="mb-3">
                 <label asp-for="Price" class="form-label">Fiyat</label>
                 <input asp-for="Price" class="form-control" placeholder="Fiyat bilgisini giriniz." />
+                <span asp-validation-for="Price" class="text-danger"></span>
             </div>
-
             <input class="btn btn-primary" type="submit" value="Ekle" />
         </form>
     </div>

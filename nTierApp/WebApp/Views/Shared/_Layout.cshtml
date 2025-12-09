@@ -13,6 +13,7 @@
     @await Html.PartialAsync("_TopMenu")
     @await Html.PartialAsync("_Brand")
     <div class="container">
+        @await Html.PartialAsync("_Notification")
         @RenderBody()
     </div>
     <footer>
