@@ -1,13 +1,50 @@
-﻿<!DOCTYPE html>
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width" />
-    <title>@ViewBag.Title</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewBag.Title - Admin</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/lib/font-awesome/css/all.css" />
+    @RenderSection("Styles", required: false)
+    <style>
+        body {
+            background-color: #f7f8fb;
+        }
+        .admin-shell {
+            min-height: 100vh;
+        }
+        .admin-sidebar {
+            width: 240px;
+            min-height: 100vh;
+            background-color: #111827;
+            color: #fff;
+        }
+        .admin-sidebar a {
+            color: #cbd5f5;
+        }
+        .admin-sidebar a.active, .admin-sidebar a:hover {
+            color: #fff;
+            background-color: #1f2937;
+        }
+    </style>
 </head>
 <body>
-    <div>
-        @RenderBody()
+    <div class="d-flex admin-shell">
+        <aside class="admin-sidebar p-3">
+            @await Html.PartialAsync("_Sidebar")
+        </aside>
+        <div class="flex-grow-1 d-flex flex-column">
+            @await Html.PartialAsync("_Topbar")
+            <main class="container-fluid py-4">
+                @await Html.PartialAsync("_Alert")
+                @RenderBody()
+            </main>
+        </div>
     </div>
+
+    <script src="~/lib/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="~/lib/font-awesome/js/all.js"></script>
+    @RenderSection("Scripts", required: false)
 </body>
 </html>

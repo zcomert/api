@@ -1,13 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using NLog.Config;
 
 namespace WebApp.Areas.Admin.Controllers;
 
-public class DashboardController : Controller
+[Area("Admin")]
+public class BookController : Controller
 {
-    [Area("Admin")]
     public IActionResult Index()
     {
-        TempData["Message"] = "Welcome to the Admin Dashboard!";
         return View();
     }
 }

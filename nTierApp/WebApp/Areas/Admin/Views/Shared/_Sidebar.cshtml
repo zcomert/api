@@ -1,0 +1,23 @@
+<div class="d-flex flex-column gap-3">
+    <div class="d-flex align-items-center gap-2">
+        <span class="fs-4 fw-semibold">Admin</span>
+    </div>
+    <nav class="nav nav-pills flex-column gap-1">
+        <a class="nav-link text-start @(ViewContext.RouteData.Values["controller"]?.ToString() == "Dashboard" ? "active" : "")"
+           asp-area="Admin" asp-controller="Dashboard" asp-action="Index">
+            <i class="fa fa-gauge-high me-2"></i> Dashboard
+        </a>
+        <a class="nav-link text-start @(ViewContext.RouteData.Values["controller"]?.ToString() == "Book" ? "active" : "")"
+           asp-area="Admin" asp-controller="Book" asp-action="Index">
+            <i class="fa fa-book-open me-2"></i> Kitaplar
+        </a>
+        <a class="nav-link text-start @(ViewContext.RouteData.Values["controller"]?.ToString() == "Category" ? "active" : "")"
+           asp-area="Admin" asp-controller="Category" asp-action="Index">
+            <i class="fa fa-tags me-2"></i> Kategoriler
+        </a>
+        <a class="nav-link text-start @(ViewContext.RouteData.Values["controller"]?.ToString() == "Users" ? "active" : "")"
+           asp-area="Admin" asp-controller="Users" asp-action="Index">
+            <i class="fa fa-users-gear me-2"></i> Kullanýcýlar
+        </a>
+    </nav>
+</div>

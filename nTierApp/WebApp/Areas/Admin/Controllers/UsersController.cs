@@ -2,12 +2,11 @@
 
 namespace WebApp.Areas.Admin.Controllers;
 
-public class DashboardController : Controller
+[Area("Admin")]
+public class UsersController : Controller
 {
-    [Area("Admin")]
     public IActionResult Index()
     {
-        TempData["Message"] = "Welcome to the Admin Dashboard!";
         return View();
     }
 }
