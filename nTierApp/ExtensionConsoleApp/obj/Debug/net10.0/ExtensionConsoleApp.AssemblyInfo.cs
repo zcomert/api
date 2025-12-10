@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ExtensionConsoleApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1ec047b631e176dfaadc100db4887b497250d2f4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7d00073a8181fd44532903cfaa3d488222bdd5dd")]
 [assembly: System.Reflection.AssemblyProductAttribute("ExtensionConsoleApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ExtensionConsoleApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

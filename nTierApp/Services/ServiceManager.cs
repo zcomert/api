@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using Entities.Models;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.Logging;
 using Repositories.Contracts;
 using Services.Contracts;
 
@@ -11,9 +13,12 @@ public class ServiceManager : IServiceManager
     private readonly Lazy<IBookService> _bookService;
     private readonly Lazy<ICategoryService> _categoryService;
     private readonly Lazy<IAuthorService> _authorService;
+    private readonly Lazy<IAuthService> _authService;
 
     public ServiceManager(IRepositoryManager repoManager,
-        ILoggerFactory loggerFactory)
+        ILoggerFactory loggerFactory,
+        UserManager<AppUser> userManager,
+        SignInManager<AppUser> signInManager)
     {
         _bookService = new Lazy<IBookService>(() => new BookManager(repoManager, 
             loggerFactory.CreateLogger<BookManager>()));
@@ -21,6 +26,7 @@ public class ServiceManager : IServiceManager
             loggerFactory.CreateLogger<CategoryManager>()));
         _authorService = new Lazy<IAuthorService>(() => new AuthorManager(repoManager,
             loggerFactory.CreateLogger<AuthorManager>()));
+        _authService = new Lazy<IAuthService>(() => new AuthManager(userManager, signInManager));
 
     }
     public IBookService BookService => 
@@ -31,4 +37,7 @@ public class ServiceManager : IServiceManager
 
     public IAuthorService AuthorService => 
        _authorService.Value;
+
+    public IAuthService AuthService => 
+       _authService.Value;
 }

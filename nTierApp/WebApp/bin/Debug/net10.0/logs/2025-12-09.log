@@ -920,3 +920,36 @@ Hata Numarası: 515,Durum: 2,Sınıf:16
 2025-12-09 22:47:54.5105|INFO|Services.BookManager|BookManager oluşturuldu. 
 2025-12-09 22:47:54.5105|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
 2025-12-09 22:47:54.5105|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 22:49:05.8461|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 22:49:05.8461|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 22:49:05.8569|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 22:49:06.6867|INFO|Services.CategoryManager|Tüm kategoriler getirildi. 
+2025-12-09 22:49:07.2541|INFO|Services.AuthorManager|Tüm yazarlar getirildi. 
+2025-12-09 22:49:07.8290|INFO|Services.CategoryManager|Tüm kategoriler getirildi. 
+2025-12-09 22:49:08.5582|INFO|Services.CategoryManager|Tüm kategoriler getirildi. 
+2025-12-09 22:49:08.9034|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 22:49:08.9034|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 22:49:08.9034|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 22:49:14.3361|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 22:49:14.3361|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 22:49:14.3420|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 22:49:31.3372|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 22:51:27.6858|INFO|Services.AuthorManager|Tüm yazarlar getirildi. 
+2025-12-09 22:51:28.2575|INFO|Services.CategoryManager|Tüm kategoriler getirildi. 
+2025-12-09 22:51:28.6006|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 22:51:28.6006|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 22:51:28.6053|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 22:51:29.3840|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 22:51:29.3840|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 22:51:29.3840|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 22:51:29.6289|INFO|Services.CategoryManager|Tüm kategoriler getirildi. 
+2025-12-09 22:51:29.9183|INFO|Services.AuthorManager|Tüm yazarlar getirildi. 
+2025-12-09 22:51:30.5202|INFO|Services.CategoryManager|Tüm kategoriler getirildi. 
+2025-12-09 22:51:30.8122|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 22:51:30.8122|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 22:51:30.8122|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 22:51:49.9641|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 22:53:21.6243|INFO|Services.BookManager|BookManager oluşturuldu. 
+2025-12-09 22:53:21.6243|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 22:53:23.3984|INFO|Services.BookManager|Tüm kitaplar getiriliyor. 
+2025-12-09 22:53:26.1022|INFO|Services.BookManager|BookManager oluşturuldu. 
