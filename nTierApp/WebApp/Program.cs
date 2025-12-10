@@ -36,6 +36,7 @@ try
     builder.UseNLog();
 
     var app = builder.Build();
+    app.SeedUsers().Wait();
     app.UseExceptionHandler(_ => { });
     app.UseStaticFiles();
     app.MapControllers();

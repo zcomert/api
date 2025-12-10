@@ -18,7 +18,8 @@ public class ServiceManager : IServiceManager
     public ServiceManager(IRepositoryManager repoManager,
         ILoggerFactory loggerFactory,
         UserManager<AppUser> userManager,
-        SignInManager<AppUser> signInManager)
+        SignInManager<AppUser> signInManager,
+        RoleManager<IdentityRole> roleManager)
     {
         _bookService = new Lazy<IBookService>(() => new BookManager(repoManager, 
             loggerFactory.CreateLogger<BookManager>()));
@@ -26,8 +27,7 @@ public class ServiceManager : IServiceManager
             loggerFactory.CreateLogger<CategoryManager>()));
         _authorService = new Lazy<IAuthorService>(() => new AuthorManager(repoManager,
             loggerFactory.CreateLogger<AuthorManager>()));
-        _authService = new Lazy<IAuthService>(() => new AuthManager(userManager, signInManager));
-
+        _authService = new Lazy<IAuthService>(() => new AuthManager(userManager, signInManager, roleManager));
     }
     public IBookService BookService => 
         _bookService.Value;

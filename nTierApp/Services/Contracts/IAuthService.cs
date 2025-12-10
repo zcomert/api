@@ -19,4 +19,7 @@ public interface IAuthService
     Task<IdentityResult> ChangePasswordAsync(string userId, string currentPassword, string newPassword);
     Task<IList<string>> GetRolesAsync(string userId);
     Task<IList<string>> GetAllRoleNamesAsync();
+    Task<IdentityResult> AddToRolesAsync(string userId, IEnumerable<string> roles);
+    Task<IdentityResult> RemoveFromRolesAsync(string userId, IEnumerable<string> roles);
+    Task SeedUsersAndRolesAsync();
 }
