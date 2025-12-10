@@ -16,4 +16,6 @@ public interface IAuthService
     Task<SignInResult> PasswordSignInAsync(string userName, string password, bool isPersistent);
     Task SignOutAsync();
     Task<IdentityResult> ResetPasswordAsync(string userId, string newPassword);
+    Task<IdentityResult> ChangePasswordAsync(string userId, string currentPassword, string newPassword);
+    Task<IList<string>> GetRolesAsync(string userId);
 }

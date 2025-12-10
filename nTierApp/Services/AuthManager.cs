@@ -22,6 +22,16 @@ public class AuthManager : IAuthService
         _signInManager = signInManager;
     }
 
+    public async Task<IdentityResult> ChangePasswordAsync(string userId, 
+        string currentPassword, 
+        string newPassword)
+    {
+        var user = await _userManager.FindByIdAsync(userId);
+        if (user is null)
+            throw new UserNotFoundException(userId);
+        return await _userManager.ChangePasswordAsync(user, currentPassword, newPassword);
+    }
+
     public Task<string> CreateTokenAsync(AppUser user)
     {
         // bunu sonra yapacağız
@@ -83,6 +93,30 @@ public class AuthManager : IAuthService
         }
 
         // 4. adım: Sonucu Dön
+        return result;
+    }
+
+    public async Task<IdentityResult> ResetPasswordAsync(string userId, string newPassword)
+    {
+        // 1. Kullanıcıyı ID'ye Göre Bul
+        var user = await _userManager.FindByIdAsync(userId);
+
+        // 2. İstisna Yönetimi: Kullanıcı Bulunamazsa
+        if (user is null)
+        {
+            IdentityResult.Failed(new IdentityError
+            {
+                Code = "UserNotFound",
+                Description = $"Kullanıcı ID'si '{userId}' olan kullanıcı bulunamadı."
+            });
+        }
+
+        // 3. Parolayı Sıfırlamak için Geçici Bir Jeton Oluştur
+        var resetToken = await _userManager.GeneratePasswordResetTokenAsync(user!);
+
+        // 4. Yeni Parolayı Ayarla
+        var result = await _userManager
+            .ResetPasswordAsync(user!, resetToken, newPassword);
         return result;
     }
 
