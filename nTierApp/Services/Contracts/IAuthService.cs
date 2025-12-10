@@ -10,7 +10,7 @@ public interface IAuthService
     Task<IdentityResult> RegisterUserAsync(UserForRegistrationDto userForRegistrationDto);
     Task<AppUser?> ValidateUserAsync(UserForAuthenticationDto userForAuthenticationDto);
     Task<String> CreateTokenAsync(AppUser user);
-    Task<IdentityUser> GetOneUserAsync(string userName);
+    Task<AppUser> GetOneUserAsync(string userName);
     Task<IEnumerable<AppUser>> GetAllUsersAsync();
     Task<AppUser?> GetUserByIdAsync(string userId);
     Task<SignInResult> PasswordSignInAsync(string userName, string password, bool isPersistent);
@@ -18,4 +18,5 @@ public interface IAuthService
     Task<IdentityResult> ResetPasswordAsync(string userId, string newPassword);
     Task<IdentityResult> ChangePasswordAsync(string userId, string currentPassword, string newPassword);
     Task<IList<string>> GetRolesAsync(string userId);
+    Task<IList<string>> GetAllRoleNamesAsync();
 }

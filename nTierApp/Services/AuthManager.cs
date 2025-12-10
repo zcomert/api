@@ -14,12 +14,15 @@ public class AuthManager : IAuthService
 {
     private readonly UserManager<AppUser> _userManager;
     private readonly SignInManager<AppUser> _signInManager;
+    private readonly RoleManager<IdentityRole> _roleManager;
 
-    public AuthManager(UserManager<AppUser> userManager, 
-        SignInManager<AppUser> signInManager)
+    public AuthManager(UserManager<AppUser> userManager,
+        SignInManager<AppUser> signInManager,
+        RoleManager<IdentityRole> roleManager)
     {
         _userManager = userManager;
         _signInManager = signInManager;
+        _roleManager = roleManager;
     }
 
     public async Task<IdentityResult> ChangePasswordAsync(string userId, 
@@ -43,7 +46,7 @@ public class AuthManager : IAuthService
         return await _userManager.Users.ToListAsync();
     }
 
-    public async Task<IdentityUser> GetOneUserAsync(string userName)
+    public async Task<AppUser> GetOneUserAsync(string userName)
     {
         var user = await _userManager.FindByNameAsync(userName);
         if (user is null)
@@ -51,6 +54,12 @@ public class AuthManager : IAuthService
             throw new UserNotFoundException(userName);
         }
         return user;
+    }
+
+    public async Task<IList<string>> GetRolesAsync(string userId)
+    {
+        var user = await GetUserByIdAsync(userId);
+        return await _userManager.GetRolesAsync(user!);
     }
 
     public async Task<AppUser?> GetUserByIdAsync(string userId)
