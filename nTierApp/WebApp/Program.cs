@@ -31,6 +31,9 @@ try
     builder.Services.ConfigureRepositories();
     builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
     builder.Services.ConfigureCors();
+    builder.Services.ConfigureIdentity();
+    builder.Services.ConfigureApplicationCookie();
+    builder.Services.ConfigureJWT(builder.Configuration);
 
     builder.Logging.ClearProviders();
     builder.UseNLog();
@@ -39,6 +42,8 @@ try
     app.SeedUsers().Wait();
     app.UseExceptionHandler(_ => { });
     app.UseStaticFiles();
+    app.UseAuthentication();    // oturum açma
+    app.UseAuthorization();     // yetkilendirme
     app.MapControllers();
 
     app.MapAreaControllerRoute(

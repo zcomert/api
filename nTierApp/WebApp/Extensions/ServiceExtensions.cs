@@ -1,8 +1,12 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Entities.Models;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using Repositories;
 using Repositories.Contracts;
 using Services;
 using Services.Contracts;
+using System.Text;
 
 namespace WebApp.Extensions;
 
@@ -54,5 +58,58 @@ public static class ServiceExtensions
                        .WithMethods("GET", "POST", "PUT") // Sadece belirli metotlara izin ver.
                        .WithHeaders("Content-Type", "Authorization")); // Sadece belirli başlıklara izin ver.
         });
+    }
+
+    public static void ConfigureIdentity(this IServiceCollection services)
+    {
+        // Identity yapılandırması buraya eklenebilir.
+        services.AddIdentity<AppUser, IdentityRole>(options =>
+        {
+            options.Password.RequireDigit = false;
+            options.Password.RequireLowercase = false;
+            options.Password.RequireUppercase = false;
+            options.Password.RequireNonAlphanumeric = false;
+            options.Password.RequiredLength = 6;
+            options.User.RequireUniqueEmail = true;
+            options.SignIn.RequireConfirmedEmail = false;
+        })
+        .AddEntityFrameworkStores<RepositoryContext>()
+        .AddDefaultTokenProviders();
+    }
+
+
+    // ConfigureApplicationCookie
+    public static void ConfigureApplicationCookie(this IServiceCollection services)
+    {
+        services.ConfigureApplicationCookie(options =>
+        {
+            options.LoginPath = "/Account/Login"; // Giriş sayfası yolu
+            options.AccessDeniedPath = "/Account/AccessDenied"; // Erişim reddedildi sayfası yolu
+            options.ExpireTimeSpan = TimeSpan.FromMinutes(60); // Çerez süresi
+            options.SlidingExpiration = true; // Kaydırmalı süre yenileme
+        });
+    }
+
+    // ConfigureJWT
+    public static void ConfigureJWT(this IServiceCollection services,
+        IConfiguration configuration)
+    {
+        var jwtSettings = configuration.GetSection("JwtSettings");
+        var secretKey = jwtSettings["Secret"] ?? String.Empty;
+
+        services.AddAuthentication()
+            .AddJwtBearer(options =>
+            {
+                options.TokenValidationParameters = new TokenValidationParameters()
+                {
+                    ValidateIssuer = true,
+                    ValidateAudience = true,
+                    ValidateLifetime = true,
+                    ValidateIssuerSigningKey = true,
+                    ValidIssuer = jwtSettings["ValidIssuer"],
+                    ValidAudience = jwtSettings["ValidAudience"],
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey))
+                };
+            });
     }
 }
