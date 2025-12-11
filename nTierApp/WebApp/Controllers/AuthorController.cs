@@ -1,8 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Services.Contracts;
 
 namespace WebApp.Controllers;
 
+[Authorize(Roles = "Admin")]
 public class AuthorController : Controller
 {
     private readonly IServiceManager _manager;

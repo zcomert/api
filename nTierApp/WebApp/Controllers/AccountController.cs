@@ -47,5 +47,10 @@ namespace WebApp.Controllers
             await _manager.AuthService.SignOutAsync();
             return RedirectToAction("Index", "Book");
         }
+
+        public IActionResult AccessDenied()
+        {
+            return View();
+        }
     }
 }
