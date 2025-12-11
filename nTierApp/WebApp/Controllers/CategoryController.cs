@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using Services.Contracts;
 
 namespace WebApp.Controllers
@@ -12,7 +12,6 @@ namespace WebApp.Controllers
             _manager = manager;
         }
 
-        // category/index | /category
         public IActionResult Index()
         {
             var categories = _manager
@@ -20,17 +19,6 @@ namespace WebApp.Controllers
                 .GetAllCategories(false);
 
             return View(categories);
-        }
-
-        // category/details
-        public IActionResult Details()
-        {
-            return View();
-        }
-
-        public IActionResult Privacy()
-        {
-            return View();
         }
     }
 }

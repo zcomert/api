@@ -187,6 +187,12 @@ public class AuthManager : IAuthService
             .RemoveFromRolesAsync(user!, validRoles!);
     }
 
+    public async Task<IdentityResult> DeleteUserAsync(string userId)
+    {
+        var user = await GetUserByIdAsync(userId);
+        return await _userManager.DeleteAsync(user!);
+    }
+
     public async Task<IdentityResult> ResetPasswordAsync(string userId, string newPassword)
     {
         // 1. Kullanıcıyı ID'ye Göre Bul

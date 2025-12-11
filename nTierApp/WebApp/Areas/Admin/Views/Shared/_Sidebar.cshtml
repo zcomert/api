@@ -15,6 +15,10 @@
            asp-area="Admin" asp-controller="Category" asp-action="Index">
             <i class="fa fa-tags me-2"></i> Kategoriler
         </a>
+        <a class="nav-link text-start @(ViewContext.RouteData.Values["controller"]?.ToString() == "Author" ? "active" : "")"
+           asp-area="Admin" asp-controller="Author" asp-action="Index">
+            <i class="fa fa-users-gear me-2"></i> Yazarlar
+        </a>
         <a class="nav-link text-start @(ViewContext.RouteData.Values["controller"]?.ToString() == "Users" ? "active" : "")"
            asp-area="Admin" asp-controller="Users" asp-action="Index">
             <i class="fa fa-users-gear me-2"></i> Kullanýcýlar

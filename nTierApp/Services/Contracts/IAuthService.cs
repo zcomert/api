@@ -21,5 +21,6 @@ public interface IAuthService
     Task<IList<string>> GetAllRoleNamesAsync();
     Task<IdentityResult> AddToRolesAsync(string userId, IEnumerable<string> roles);
     Task<IdentityResult> RemoveFromRolesAsync(string userId, IEnumerable<string> roles);
+    Task<IdentityResult> DeleteUserAsync(string userId);
     Task SeedUsersAndRolesAsync();
 }

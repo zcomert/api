@@ -1,0 +1,23 @@
+@model Entities.Models.Category
+
+<h2>Kategoriyi Sil</h2>
+<h3>Bu kategoriyi silmek istediğinizden emin misiniz?</h3>
+
+<div>
+    <h4>Kategori Detayları</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CategoryName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CategoryName)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="CategoryId" />
+        <button type="submit" class="btn btn-danger">Sil</button> |
+        <a asp-action="Index">Listeye Geri Dön</a>
+    </form>
+</div>
