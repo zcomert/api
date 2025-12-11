@@ -30,11 +30,15 @@
                         <span>@User?.Identity!.Name</span>
                     </button>
                     <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="userDropdown">
-                        <li>
-                            <a class="dropdown-item" href="#">
-                                <i class="bi bi-person me-2"></i>Profil
-                            </a>
-                        </li>
+                        @if(User.IsInRole("Admin"))
+                        {
+                            <li>
+                                <a class="dropdown-item" asp-area="Admin" asp-controller="Dashboard" asp-action="Index">
+                                    <i class="bi bi-person me-2"></i>Admin
+                                </a>
+                            </li>
+                        }
+
                         <li>
                             <a class="dropdown-item" href="#">
                                 <i class="bi bi-gear me-2"></i>Ayarlar
