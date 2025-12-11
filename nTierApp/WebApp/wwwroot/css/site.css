@@ -1,0 +1,82 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+  color: var(--bs-secondary-color);
+  text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+  text-align: start;
+}
+
+/* Modern User Dropdown Styles */
+.dropdown-toggle {
+    border-radius: 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.dropdown-toggle:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.dropdown-menu {
+    border: none;
+    border-radius: 12px;
+    padding: 0.5rem 0;
+    margin-top: 0.5rem;
+    min-width: 220px;
+}
+
+.dropdown-item {
+    padding: 0.75rem 1.25rem;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+    padding-left: 1.5rem;
+}
+
+.dropdown-item i {
+    font-size: 1.1rem;
+    width: 24px;
+}
+
+.dropdown-divider {
+    margin: 0.5rem 0;
+}
+
+/* User Button Styles */
+.btn-outline-light:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(255,255,255,0.3);
+}
+
+.gap-2 {
+    gap: 0.5rem !important;
+}

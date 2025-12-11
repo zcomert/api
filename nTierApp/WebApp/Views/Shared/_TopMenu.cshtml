@@ -17,6 +17,52 @@
                     <a class="nav-link" asp-controller="Author" asp-action="Index">Yazarlar</a>
                 </li>
             </ul>
+            
+            @if (User.Identity?.IsAuthenticated ?? false)
+            {
+                <div class="dropdown">
+                    <button class="btn btn-light dropdown-toggle d-flex align-items-center gap-2 px-3" 
+                            type="button" 
+                            id="userDropdown" 
+                            data-bs-toggle="dropdown" 
+                            aria-expanded="false">
+                        <i class="bi bi-person-circle"></i>
+                        <span>@User?.Identity!.Name</span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="userDropdown">
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <i class="bi bi-person me-2"></i>Profil
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <i class="bi bi-gear me-2"></i>Ayarlar
+                            </a>
+                        </li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li>
+                            <form asp-controller="Account" asp-action="Logout" method="post" class="d-inline w-100">
+                                <button type="submit" class="dropdown-item text-danger">
+                                    <i class="bi bi-box-arrow-right me-2"></i>Çýkýþ Yap
+                                </button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            }
+            else
+            {
+                <div class="d-flex gap-2">
+                    <a asp-controller="Account" asp-action="Login" class="btn btn-outline-light">
+                        <i class="bi bi-box-arrow-in-right me-1"></i>Giriþ Yap
+                    </a>
+                    <a asp-controller="Account" asp-action="Register" class="btn btn-light">
+                        <i class="bi bi-person-plus me-1"></i>Kayýt Ol
+                    </a>
+                </div>
+            }
+
         </div>
     </div>
 </nav>

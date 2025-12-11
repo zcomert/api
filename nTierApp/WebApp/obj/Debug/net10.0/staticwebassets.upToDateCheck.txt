@@ -94,6 +94,7 @@ D:\api\nTierApp\WebApp\wwwroot\lib\jquery-validate\localization\messages_pl.js
 D:\api\nTierApp\WebApp\wwwroot\lib\jquery-validate\localization\messages_hr.js
 D:\api\nTierApp\WebApp\wwwroot\lib\jquery\jquery.slim.js
 D:\api\nTierApp\WebApp\wwwroot\lib\jquery-validate\localization\messages_tr.js
+D:\api\nTierApp\WebApp\wwwroot\css\site.css
 D:\api\nTierApp\WebApp\wwwroot\lib\bootstrap\css\bootstrap-utilities.rtl.css.map
 D:\api\nTierApp\WebApp\wwwroot\lib\bootstrap\css\bootstrap-reboot.rtl.css.map
 D:\api\nTierApp\WebApp\wwwroot\lib\jquery-validate\localization\messages_eu.min.js
@@ -276,6 +277,7 @@ D:\api\nTierApp\WebApp\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.mi
 D:\api\nTierApp\WebApp\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
 D:\api\nTierApp\WebApp\wwwroot\lib\jquery\dist\jquery.js
 D:\api\nTierApp\WebApp\wwwroot\lib\font-awesome\css\regular.min.css
+wwwroot\css\site.css
 wwwroot\index.html
 wwwroot\lib\bootstrap\LICENSE
 wwwroot\lib\bootstrap\css\bootstrap-grid.css

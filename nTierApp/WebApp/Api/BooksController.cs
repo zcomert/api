@@ -1,11 +1,14 @@
 ﻿using Entities.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Services.Contracts;
 
 namespace WebApp.Api;
 
+[Authorize(AuthenticationSchemes = "Bearer")]
 [ApiController]
 [Route("api/books")]
+[Authorize(Roles ="Admin")]
 public class BooksController : ControllerBase
 {
     private readonly IServiceManager _manager;

@@ -1,9 +1,11 @@
 ﻿using Entities.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Services.Contracts;
 
 namespace WebApp.Controllers;
 
+[Authorize]
 public class BookController : Controller
 {
     private readonly IServiceManager _manager;

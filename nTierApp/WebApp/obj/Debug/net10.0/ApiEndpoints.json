@@ -1,5 +1,37 @@
 [
   {
+    "ContainingType": "WebApp.Api.AuthenticationController",
+    "Method": "Login",
+    "RelativePath": "api/auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userForAuthDto",
+        "Type": "Entities.DataTransferObjects.UserForAuthenticationDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApp.Api.AuthenticationController",
+    "Method": "RegisterUser",
+    "RelativePath": "api/auth/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userDto",
+        "Type": "Entities.DataTransferObjects.UserForRegistrationDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "WebApp.Api.AuthorsController",
     "Method": "GetAuthors",
     "RelativePath": "api/authors",
