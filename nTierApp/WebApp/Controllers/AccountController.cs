@@ -39,6 +39,32 @@ namespace WebApp.Controllers
             return View(userDto);
         }
 
+        public IActionResult Register()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Register(UserForRegistrationDto userForRegistrationDto)
+        {
+            if(!ModelState.IsValid)
+                return View(userForRegistrationDto);
+
+            var result = await _manager.AuthService.RegisterUserAsync(userForRegistrationDto);
+
+            if (result.Succeeded)
+                return RedirectToAction("Login");
+            else
+            {
+                foreach (var error in result.Errors)
+                {
+                    ModelState.AddModelError(string.Empty, error.Description);
+                }
+            }
+            return View(userForRegistrationDto);
+        }
+
 
         [HttpPost]
         [ValidateAntiForgeryToken]
